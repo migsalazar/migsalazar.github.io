@@ -1,5 +1,5 @@
-name: Miguel Salazar
-description: Sometimes, I have no idea what I do.
+name: hardcoding {.io}
+description: blog.hardcoding.io
 
 # File management
 include: [".htaccess"]
@@ -16,3 +16,11 @@ kramdown:
   input: GFM
   hard_wrap: false
 highlighter: rouge
+
+#gems
+gems:
+  - github-pages
+  - jekyll-gist
+whitelist:
+  - jekyll-gist
+  - github-pages

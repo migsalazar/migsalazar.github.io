@@ -2,4 +2,4 @@
 layout: about
 ---
 
-Hello
+Sometimes i don't know what I'm doing.
