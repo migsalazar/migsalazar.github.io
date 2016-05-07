@@ -1,4 +1,4 @@
-name: hardcoding {.io}
+name: //hardcoding.io
 description: blog.hardcoding.io
 
 # File management
@@ -16,6 +16,8 @@ kramdown:
   input: GFM
   hard_wrap: false
 highlighter: rouge
+
+pigments: true
 
 #gems
 gems:
