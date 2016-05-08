@@ -1,5 +1,6 @@
-name: //hardcoding.io
+name: //hardcoding
 description: blog.hardcoding.io
+location: Monterrey, Mx.
 
 # File management
 include: [".htaccess"]

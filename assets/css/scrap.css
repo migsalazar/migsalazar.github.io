@@ -1,0 +1,32 @@
+/*GitHub*/
+.gist-file {
+  border: 0 !important;
+  border-radius: 0px !important;
+  margin-bottom: 1.5em !important;
+}
+.gist-data {
+  border: 1px solid #ddd !important;
+}
+.gist-meta,
+.js-line-number {
+  font: 13px !important;
+  font-family: "Inconsolata" !important;
+  padding: 5px !important;
+  border-bottom: 0px !important;
+}
+.gist-meta a {
+    color: #a00 !important;
+    font-weight: normal !important;
+    text-decoration: none;
+}
+.gist-meta a:hover {
+    color: #a00 !important;
+    border-bottom: 1px dotted !important;
+    font-weight: bold !important;
+}
+.gist-meta{
+  background-color: #fff !important
+}
+.blob-code {
+    padding-left: 2px !important;
+}

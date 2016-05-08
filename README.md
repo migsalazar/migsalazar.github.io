@@ -1,2 +1,3 @@
-# mikengine.github.io
-hardcoding.co
+# hardcoding.io
+
+My blog

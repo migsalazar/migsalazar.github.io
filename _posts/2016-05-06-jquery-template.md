@@ -12,5 +12,6 @@ In practical terms, we can refer to JQuery documentation in order to know more a
 {% gist 15ece1aafab804dce91612f378d06c35 %}
 
 Enjoy!
+  
 
-*Thanks [Yorch](https://twitter.com/j0rg3_nt) for editing my english grammar. You are the boss!*
+*Thank you [Yorch](https://twitter.com/j0rg3_nt) for editing my english grammar. You are the boss!*

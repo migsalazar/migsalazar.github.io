@@ -28,7 +28,8 @@ a {
   }
   &:hover {
     color: $color-link;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    border-bottom: 1px dotted;
   }
   &:active {
     color: $color-link;
@@ -77,6 +78,10 @@ ul {
             padding-left: 5px;
         }
     }
+    i {
+      color: $color-link;
+
+    }
 }
 
 
@@ -115,7 +120,7 @@ ul {
         color: $color-grey-strong;
     }
     &__content {
-        padding-top: 40px;
+        padding: 40px 0 40px 0;
         h1 {
             font-size: 1.25em;
             font-weight: 700;
@@ -128,9 +133,10 @@ ul {
             margin-bottom: 15px;
         }
         a {
-            text-decoration: underline;
+            text-decoration: none;
             &:hover {
                 font-weight: bold;
+                border-bottom: 1px dotted;
             }
         }
         strong {
@@ -191,14 +197,19 @@ ul {
 }
 
 .about {
+    padding-bottom: 30px;
     &__title {
+
         font-size: 1.6em;
-        font-weight: 700;
         margin-top: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+
+    }
+    &__location{
+        color: $color-grey-strong;
     }
     &__content {
-        margin-top: 20px;
+        margin-top: 40px;
         h1 {
             font-size: 1.2em;
             font-style: italic;
