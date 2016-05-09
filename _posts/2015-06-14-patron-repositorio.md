@@ -1,7 +1,6 @@
 ---
 layout: post
 title: El Patrón repositorio
-published: true
 ---
 
 Con la moda *-que por cierto ya algo viejo-* de aplicaciones orientadas al dominio, seguramente nos hemos llenado la cabeza de conceptos relacionados. Existen montones de implementaciones, y particularmente para los que viajamos al mundo de .NET, tenemos la referencia de DDD N-Layered .NET 4.0 Architecture Guide.
