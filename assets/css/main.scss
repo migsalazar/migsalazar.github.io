@@ -80,7 +80,7 @@ ul {
     }
     i {
       color: $color-link;
-      .fa-bug { 
+      &.fa-bug { 
         text-shadow: 2px 2px 2px #ccc;
         }
     }
