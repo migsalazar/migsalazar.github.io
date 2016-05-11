@@ -170,25 +170,25 @@ ul {
                 margin: auto;
             }
         }
+        blockquote {
+          margin: 1.5em 10px;
+          padding: 0.5em 10px;
+          &:before {
+            content: ">>"
+          }
+          p {
+            font-style: italic;
+            display: inline;
+            color: #767676;
+          }
+        }
         code {
             padding: 3px;
             font-size: 0.9em;
             border-radius: 3px;
             background: $color-grey;
         }
-        .highlight {
-            margin: 10px;
-            margin-bottom: 15px;
-            padding: 10px;
-            line-height: 1.5;
-            border-radius: 3px;
-            background: $color-fg;
-            code {
-                color: $color-code;
-                background: none;
-            }
-        }
-        .codebreak {
+        .break {
             margin: 15px;
             border: 0;
             border-bottom: 1px dashed $color-fg;

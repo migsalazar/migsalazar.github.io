@@ -3,12 +3,12 @@ layout: post
 title: Patrón repositorio
 ---
 
-Con la moda *-que por cierto ya algo viejo-* de aplicaciones orientadas al dominio, seguramente nos hemos llenado la cabeza de conceptos relacionados. Existen montones de implementaciones, y particularmente para los que viajamos al mundo de .NET, tenemos la referencia de DDD N-Layered .NET 4.0 Architecture Guide.
+Con el tema en moda -aunque algo viejo- de [aplicaciones orientadas al dominio](https://en.wikipedia.org/wiki/Domain-driven_design), seguramente nos hemos llenado la cabeza de conceptos relacionados. Existen montones de implementaciones, y particularmente para los que viajamos al mundo de .NET, tenemos la referencia de [DDD N-Layered .NET 4.0 Architecture Guide](https://blogs.msdn.microsoft.com/marblogging/2011/05/23/domain-drive-design-n-layered-net-4-0-architecture-guide/).
 
-Entre muchos, el tema de patrones de diseño es principal y uno de estos patrones, en donde yo considero que hay mucho debate, es el Repositorio. Por lo cual,  me gustaría entrar en discusión al respecto.
+Entre muchos, el tema de patrones de diseño es principal y uno de estos patrones, en donde yo considero que existe mucho debate, es el [Patrón Repositorio](https://msdn.microsoft.com/en-us/library/ff649690.aspx). Asi que, decidí publicar esto...
 
 # La base
-Tomaré como base la definición un poco más general y -creo- acertada de [Martin Fowler](http://martinfowler.com/) sobre el patrón Respositorio:
+Tomaré como base [la definición](http://martinfowler.com/eaaCatalog/repository.html) un poco más general y -creo- acertada de [Martin Fowler](http://martinfowler.com/) sobre el patrón respositorio:
 
 > A Repository mediates between the domain and data mapping layers, acting like an in-memory domain object collection.
 
