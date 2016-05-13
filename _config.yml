@@ -24,6 +24,7 @@ pigments: true
 gems:
   - github-pages
   - jekyll-gist
+  - jekyll-seo-tag
 whitelist:
   - jekyll-gist
   - github-pages
