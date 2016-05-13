@@ -1,6 +1,10 @@
 name: debugg.io
 description: Debugging stories, coding, hacking and a little sarcasm.
-location: Monterrey, Mx.
+twitter:
+  username: mikengine
+author: mikengine
+seo
+  name: Miguel Salazar
 
 # File management
 include: [".htaccess"]
