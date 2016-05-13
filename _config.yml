@@ -3,8 +3,6 @@ description: Debugging stories, coding, hacking and a little sarcasm.
 twitter:
   username: mikengine
 author: mikengine
-seo
-  name: Miguel Salazar
 
 # File management
 include: [".htaccess"]
@@ -32,3 +30,4 @@ gems:
 whitelist:
   - jekyll-gist
   - github-pages
+  - jekyll-seo-tag
