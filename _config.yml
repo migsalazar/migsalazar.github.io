@@ -1,8 +1,8 @@
 name: debugg.io
 description: Debugging stories, coding, hacking and a little sarcasm.
-twitter:
-  username: mikengine
-author: mikengine
+# twitter:
+#   username: mikengine
+# author: mikengine
 
 # File management
 include: [".htaccess"]
