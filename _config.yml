@@ -1,19 +1,20 @@
 name: debugg.io
 description: Debugging stories, coding, hacking and a little sarcasm.
+repository: mikengine/mikengine.github.io
 # twitter:
 #   username: mikengine
 # author: mikengine
+
+permalink: /:year/:month/:day/:title/
 
 # File management
 include: [".htaccess"]
 exclude: ["README.md", "LICENSE"]
 
-# Sass
 sass:
-  style: :compressed
+  style: :compresseds
   sass_dir: _sass
 
-# Markdown
 markdown: kramdown
 kramdown:
   input: GFM
@@ -22,12 +23,12 @@ highlighter: rouge
 
 pigments: true
 
-#gems
 gems:
   - github-pages
   - jekyll-gist
-  - jekyll-seo-tag
+  # - jekyll-seo-tag
+
 whitelist:
-  - jekyll-gist
   - github-pages
-  - jekyll-seo-tag
+  - jekyll-gist
+  # - jekyll-seo-tag
