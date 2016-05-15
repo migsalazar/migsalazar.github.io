@@ -1,9 +1,9 @@
 name: debugg.io
 description: Debugging stories, coding, hacking and a little sarcasm.
 repository: mikengine/mikengine.github.io
-# twitter:
-#   username: mikengine
-# author: mikengine
+twitter:
+  username: mikengine
+author: mikengine
 
 permalink: /:year/:month/:day/:title/
 
@@ -26,9 +26,10 @@ pigments: true
 gems:
   - github-pages
   - jekyll-gist
-  # - jekyll-seo-tag
+  - jekyll-seo-tag
+  - jekyll-github-metadata
 
 whitelist:
   - github-pages
   - jekyll-gist
-  # - jekyll-seo-tag
+  - jekyll-seo-tag
