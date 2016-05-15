@@ -8,7 +8,7 @@ permalink: /:year/:month/:day/:title/
 
 twitter:
   username: mikengine
-  picture: /assets/img/fa-bug.png
+  image: /assets/img/fa-bug.png
 
 # File management
 include: [".htaccess"]
