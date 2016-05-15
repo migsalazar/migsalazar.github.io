@@ -1,12 +1,14 @@
 name: debugg.io
 description: Debugging stories, coding, hacking and a little sarcasm.
+author: mikengine
+logo: /assets/img/fa-bug.png
 repository: mikengine/mikengine.github.io
+
+permalink: /:year/:month/:day/:title/
+
 twitter:
   username: mikengine
   picture: /assets/img/fa-bug.png
-author: mikengine
-
-permalink: /:year/:month/:day/:title/
 
 # File management
 include: [".htaccess"]
