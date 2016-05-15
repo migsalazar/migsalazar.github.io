@@ -4,6 +4,7 @@ repository: mikengine/mikengine.github.io
 twitter:
   username: mikengine
 author: mikengine
+logo: /assets/fa-bug.png
 
 permalink: /:year/:month/:day/:title/
 
