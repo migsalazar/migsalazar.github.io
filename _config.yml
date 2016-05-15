@@ -30,10 +30,10 @@ gems:
   - github-pages
   - jekyll-gist
   - jekyll-seo-tag
-  - jekyll-github-metadata
   - jekyll-sitemap
 
 whitelist:
   - github-pages
   - jekyll-gist
   - jekyll-seo-tag
+  - jekyll-sitemap
