@@ -3,6 +3,7 @@ description: Debugging stories, coding, hacking and a little sarcasm.
 repository: mikengine/mikengine.github.io
 twitter:
   username: mikengine
+  image: /assets/fa-bug.png
 author: mikengine
 logo: /assets/fa-bug.png
 
