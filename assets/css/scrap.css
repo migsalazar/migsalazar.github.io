@@ -25,7 +25,8 @@
     font-weight: bold !important;
 }
 .gist-meta{
-  background-color: #fff !important
+  background-color: #fff !important;
+  opacity: 0.6;
 }
 .blob-code {
     padding-left: 2px !important;

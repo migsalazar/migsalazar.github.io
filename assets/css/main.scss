@@ -115,11 +115,16 @@ ul {
     padding-bottom: 30px;
     &__title {
         font-size: 1.6em;
+        font-weight: 700;
         margin-top: 20px;
         margin-bottom: 5px;
     }
     &__date {
         color: $color-grey-strong;
+    }
+    &__index {
+        float: right;
+        vertical-align: middle;
     }
     &__content {
         padding: 40px 0 40px 0;
@@ -210,6 +215,14 @@ ul {
             border-bottom: 1px dashed $color-fg;
         }
     }
+    &_prevnext {
+      .prev {
+        float: left;
+      }
+      .next {
+          float: right;;
+      }
+    }
 }
 
 .about {
@@ -223,6 +236,10 @@ ul {
     }
     &__location{
         color: $color-grey-strong;
+    }
+    &__index {
+        float: right;
+        vertical-align: middle;
     }
     &__content {
         margin-top: 40px;
