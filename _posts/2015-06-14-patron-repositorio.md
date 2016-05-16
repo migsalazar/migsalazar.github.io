@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Patrón repositorio
+category: .NET
+tags: [patrones diseño, design patterns, .net, patterns, repository]
 ---
 
 Con el tema en moda *-aunque algo oldie-* de [aplicaciones orientadas al dominio](https://en.wikipedia.org/wiki/Domain-driven_design), seguramente nos hemos llenado la cabeza de conceptos relacionados. Existen montones de implementaciones, y particularmente para los que viajamos al mundo de .NET, tenemos la referencia de [DDD N-Layered .NET 4.0 Architecture Guide](https://blogs.msdn.microsoft.com/marblogging/2011/05/23/domain-drive-design-n-layered-net-4-0-architecture-guide/).
@@ -20,8 +22,8 @@ Asi que, la idea de crear repositorios es la de construir una abstracción que f
 
 Abstraer la lógica de persistencia y acceso a datos de la lógica de dominio.
 
-* Un lugar central donde podemos mantener las “consultas de objetos”.
-* Facilidad para la construcción de pruebas unitarias sin necesidad de tener acceso a datos. Por supuesto, todo depende de como hayamos separado responsabilidades en nuestro código. Crear repositorios no significa que se corregirán problemas de diseño.
+- Un lugar central donde podemos mantener las “consultas de objetos”.
+- Facilidad para la construcción de pruebas unitarias sin necesidad de tener acceso a datos. Por supuesto, todo depende de como hayamos separado responsabilidades en nuestro código. Crear repositorios no significa que se corregirán problemas de diseño.
 
 # La implementación
 
