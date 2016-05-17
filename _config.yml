@@ -1,14 +1,14 @@
-name: debugg.io
+name: Mig Salazar
 description: Debugging stories, coding, hacking and a little sarcasm.
-author: mikengine
+author: migsalazar
 logo: /assets/img/fa-bug.png
 image: /assets/img/fa-bug.png
-repository: mikengine/mikengine.github.io
+repository: migsalazar/migsalazar.github.io
 
 permalink: /:year/:month/:day/:title/
 
 twitter:
-  username: mikengine
+  username: migsalazar_
 
 # File management
 include: [".htaccess"]
