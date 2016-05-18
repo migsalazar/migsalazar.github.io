@@ -12,7 +12,7 @@ Anyways... This time I don't come to talk you about [horror stories of the evil 
 # Plugin creation
 We can refer to [jQuery documentation](https://learn.jquery.com/plugins/basic-plugin-creation/) in order to know more about jQuery plugins. But if you already know about it, please feel free to give me a suggestion for this template.
 
-Of course, this would be irrelevant if your intention is use directly [jQueryUI](http://jqueryui.com/) because it has a `jQuery.widget` function to solve this situation.
+Since [jQueryUI](http://jqueryui.com/) has the `jQuery.widget` function, this would be irrelevant if your intention is use directly jQueryUI.
 
 {% gist 15ece1aafab804dce91612f378d06c35 %}
 
