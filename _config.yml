@@ -1,7 +1,6 @@
 name: Mig Salazar
 url: http://migsalazar.com
 description: Debugging stories, coding, hacking and a little sarcasm
-author: migsalazar
 repository: migsalazar/migsalazar.github.io
 
 permalink: /:year/:month/:day/:title/
