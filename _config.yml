@@ -1,8 +1,6 @@
 name: Mig Salazar
 description: Debugging stories, coding, hacking and a little sarcasm.
 author: migsalazar
-logo: /assets/img/fa-bug.png
-image: /assets/img/fa-bug.png
 repository: migsalazar/migsalazar.github.io
 
 permalink: /:year/:month/:day/:title/
