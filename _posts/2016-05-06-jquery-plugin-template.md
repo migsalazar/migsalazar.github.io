@@ -14,6 +14,8 @@ We can refer to [jQuery documentation](https://learn.jquery.com/plugins/basic-pl
 
 Since [jQueryUI](http://jqueryui.com/) has the `jQuery.widget` function, this would be irrelevant if your intention is use directly jQueryUI.
 
+Okay stop! Right away, here is:
+
 {% gist 15ece1aafab804dce91612f378d06c35 %}
 
 Enjoy!
