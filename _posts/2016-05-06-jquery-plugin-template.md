@@ -5,7 +5,7 @@ category: jQuery
 tags: [jquery, jQuery plugin template, jQuery template boilerplate]
 ---
 
-It had to happen, when someone is involve in a big company, taking a break it becomes complicated; so one leave the blog. I hope that it never happens to you. It's a shit..
+It had to happen, when someone is involve in a big company, taking a break it becomes complicated; so you leave the blog. I hope that it never happens to you. It's a shit..
 
 Anyways... This time I don't come to talk you about [horror stories of the evil hell]() or something like that. Over the last month I have been working a lot with [jQuery](https://jquery.com/) and it [weirds things]() *-I'd say more than normal-*, so I found interesting to share with you the next template which I use for my own jQuery plugins. It's nothing to shout about, but if you are looking for some *fast food* this could be perfect.
 
