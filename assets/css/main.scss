@@ -122,10 +122,6 @@ ul {
     &__date {
         color: $color-grey-strong;
     }
-    &__index {
-        float: right;
-        vertical-align: middle;
-    }
     &__content {
         padding: 40px 0 40px 0;
         h1 {
@@ -236,10 +232,6 @@ ul {
     }
     &__location{
         color: $color-grey-strong;
-    }
-    &__index {
-        float: right;
-        vertical-align: middle;
     }
     &__content {
         margin-top: 40px;
