@@ -61,6 +61,7 @@ Es claro que las llamadas a las clases se hace utilizando el nombre completo cal
 
 > "Un espacio de nombres es un esquema lógico de nombres para tipos en el que un nombre de tipo simple, como MiTipo, aparece precedido por un nombre jerárquico separado por puntos. [...]". [msdn](https://msdn.microsoft.com/en-us/library/ms973231.aspx)
 
+# La conclusión
 Por lo tanto, esto no afecta en el rendimiento. La declaración de los namespace dentro o fuera del namespace actual, solo modificará la prioridad del namespace deba utilizar. Al final, siempre se llamará a la clase por su nombre completo, incluyendo el namespace.
 
 Otra buena justificación para sustentar esto sería, ¿Qué pasa con los using que no se declaran? Es decir, aquellos namespace que están dentro del código. Por ejemplo, hacerlo de esta manera:
