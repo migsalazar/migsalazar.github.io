@@ -1,14 +1,19 @@
 $(function(){
     //just for fun
+    var count = 10,
+        anim = 'rubberBand';
     $('body').on('mousemove', function(){
-        var anim = 'rubberBand';
-        setTimeout( function(){ 
-            $('h1 i.fa').removeClass('animated ' + anim)
-                .addClass('animated ' + anim)
-                .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-                function(){
-                  $(this).removeClass('animated ' + anim);
-                });
-        }  , 2000 );
+        count++;
+        if(count > 100) {
+          $('h1 i.fa')
+          .removeClass('animated ' + anim)
+          .addClass('animated ' + anim)
+          .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+          function(){
+            $(this).removeClass('animated ' + anim);
+            count = 0;
+          });
+        }
     });
 });
+
