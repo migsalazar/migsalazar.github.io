@@ -9,5 +9,5 @@ $(function(){
             function(){
               $(this).removeClass('animated ' + anim);
             });
-    }  , 1000 );
+    }  , 3000 );
 });
