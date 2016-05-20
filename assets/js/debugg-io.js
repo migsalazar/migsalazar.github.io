@@ -1,7 +1,0 @@
-$(function(){
-
-
-  //typed header
-  
-
-});
