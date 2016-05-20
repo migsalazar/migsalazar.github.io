@@ -1,10 +1,10 @@
 $(function(){
     //just for fun
-    var count = 10,
+    var count = 50,
         anim = 'rubberBand';
     $('body').on('mousemove', function(){
         count++;
-        if(count > 100) {
+        if(count > 70) {
           $('h1 i.fa')
           .removeClass('animated ' + anim)
           .addClass('animated ' + anim)
