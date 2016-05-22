@@ -1,19 +1,13 @@
 $(function(){
     //just for fun
-    var count = 50,
-        anim = 'rubberBand';
-    $('body').on('mousemove', function(){
-        count++;
-        if(count > 70) {
-          $('h1 i.fa')
+    $('h1 i.fa').on('mouseenter', function(){
+        var anim = 'hinge';
+          $(this)
           .removeClass('animated ' + anim)
           .addClass('animated ' + anim)
           .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
           function(){
-            $(this).removeClass('animated ' + anim);
-            count = 0;
+            $(this).removeClass('fa fa-child animated ' + anim);
           });
-        }
     });
 });
-
