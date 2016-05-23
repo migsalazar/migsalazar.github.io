@@ -5,14 +5,14 @@ category: python
 tags: [python, project euler]
 ---
 
-De esos días que decides tomarte un gran y amplio descanso de 15 minutos *-como ustedes sabrán soy un rockstar y estoy muy ocupado atendiendo a mis fans-*, me puse a vagar por la red, sin rumbo alguno y en modo `random`... y encontré por ahí tan bonito sitio: [Project Euler](https://projecteuler.net/)
+De esos días que decides tomarte un gran y amplio descanso de 15 minutos *-como ustedes sabrán soy un rockstar y estoy muy ocupado atendiendo a mis fans-*, me puse a vagar por la red, sin rumbo alguno y en modo `random`... y encontré por ahí tan bonito sitio: [Project Euler](https://projecteuler.net/){:target="_blank"}.
 
 *No sé como no lo había descubierto antes si soy <del>geek</del> rockstar y de lo más intrépido.*
 
 Trata de un sitio donde el atractivo principal es una serie de problemas matemáticos que deben ser resueltos mediante una rutina de programación. Para darle un valor agregado, uno debe registrarse para empezar a formar parte de la comunidad y se van rankeando los usuarios con mayor puntaje a modo competencia.
 
 # ¿Cuál es el punto?
-Pues resulta que hay cierta persona en mi trabajo que siempre advierte que es inmune a todo, que lo puede todo y lo sabe todo *-ñaca-ñaca-*. No quiero decir nombres ni hacerles saber de [quién](https://twitter.com/Memo_Pita) se trata. Y entonces, decidí retarlo.
+Pues resulta que hay cierta persona en mi trabajo que siempre advierte que es inmune a todo, que lo puede todo y lo sabe todo *-ñaca-ñaca-*. No quiero decir nombres ni hacerles saber de [quién](https://twitter.com/Memo_Pita){:target="_blank"} se trata. Y entonces, decidí retarlo.
 
 Utilizaremos python, dado que los dos sabemos prácticamente nada y además yo tenía tiempo queriendo ponerme a practicar. Por si fuera poco, para los problemas complejos no ganará quien solamente los resuelva, si no el que genere la rutina que obtenga el resultado en menor tiempo.
 
