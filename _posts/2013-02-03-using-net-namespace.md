@@ -5,8 +5,6 @@ category: .NET
 tags: [using, .net, namespace]
 ---
 
-Hace algunas semanas atrás, una alumna me preguntaba sobre el impacto del rendimiento al importar librerías en .NET. Recordé que tenía una entrada sobre el tema en mi antigüo blog, quizá de hace casi dos años; prometí postearlo, así que copio y pego la entrada.
-
 Trabajando con MVC de .NET y la estructura que maneja por defecto, recientemente tuve un problema al utilizar `ViewModels`, ya que el espacio de nombres donde los incluía era dentro del espacio de nombres del modelo. Independientemente de la implementación de los ViewModels que elegí, el problema consistía en como estaban organizados.
 
 Modifiqué algunas cosas para solucionar el problema, pero al mismo tiempo me di cuenta que variando  la declaración de los using (dentro o fuera del namespace actual) obtenía resultados diferentes. Es por esto último que decidí <del>cambiarme de lenguaje</del> escribir una entrada sobre dicha problemática.
