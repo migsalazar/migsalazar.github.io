@@ -42,7 +42,7 @@ El resultado es el siguiente:
 # La razón
 La razón es muy simple; cuando los using están fuera, las clases que nosotros hemos creado tendrán prioridad. En el otro caso, cuando los using están dentro, las clases de .NET o de los using que estén dentro serán las que tendrán prioridad.
 
-El compilador, siempre concatena la directiva using con el nombre de la clase. Al crearse el IL o MSIL (lenguaje intermedio), *- independientemente del lenguaje de alto nivel, el código IL generado es el mismo -* no contiene los famosos namespace, es decir, en IL no existen tales cosas. Lo único que hay son los nombres completos calificados de las clases [(Full Qualified Class Name)](https://en.wikipedia.org/wiki/Fully_qualified_name). Por ejemplo, la clase `DateTime` se identifica realmente como `System.DateTime`.
+El compilador, siempre concatena la directiva using con el nombre de la clase. Al crearse el IL o MSIL (lenguaje intermedio), *- independientemente del lenguaje de alto nivel, el código IL generado es el mismo -* no contiene los famosos namespace, es decir, en IL no existen tales cosas. Lo único que hay son los nombres completos calificados de las clases [(Full Qualified Class Name)](https://en.wikipedia.org/wiki/Fully_qualified_name){:target="_blank"}. Por ejemplo, la clase `DateTime` se identifica realmente como `System.DateTime`.
 
 # La discusión
 En algunos blogs llegué a leer que está decisión, el ponerlos dentro o fuera, afectaba el rendimiento. Ya que el ponerlos fuera generaba que se cargaran todos los ensamblados que se declararon con los usings. Pero permítame comentarle que esto es totalmente falso :V
@@ -57,7 +57,7 @@ Ahora veamos el código generado del segundo ejemplo
 
 Es claro que las llamadas a las clases se hace utilizando el nombre completo calificado de clase.
 
-> "Un espacio de nombres es un esquema lógico de nombres para tipos en el que un nombre de tipo simple, como MiTipo, aparece precedido por un nombre jerárquico separado por puntos. [...]". [msdn](https://msdn.microsoft.com/en-us/library/ms973231.aspx)
+> "Un espacio de nombres es un esquema lógico de nombres para tipos en el que un nombre de tipo simple, como MiTipo, aparece precedido por un nombre jerárquico separado por puntos. [...]". [msdn](https://msdn.microsoft.com/en-us/library/ms973231.aspx){:target="_blank"}
 
 # La conclusión
 Por lo tanto, esto no afecta en el rendimiento. La declaración de los namespace dentro o fuera del namespace actual, solo modificará la prioridad del namespace deba utilizar. Al final, siempre se llamará a la clase por su nombre completo, incluyendo el namespace.
