@@ -14,7 +14,7 @@ Canopy es un ligero framework que nos permite realizar pruebas directamente sobr
 
 > f#rictionless web testing
 
-# F#RICTIOGNFDK… ¿EH?
+# f#rictjnkjnsjdn… ¿eh?
 Canopy, está escrito en [f#](http://fsharp.org/) el cual es un lenguaje que funciona como un [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) y esto hace que tenga una potencia bastante buena *-cual flecha al viento-*. Ya implementado dentro de canopy, se podría decir que trabaja como un [DSL](https://en.wikipedia.org/wiki/Domain-specific_language).
 
 La documentación no es muy buena que digamos, pero es lo suficiente como para empezar escribiendo test *-al vuelo-*. Además, el hecho de estar escrito en f# le da bastante potencia para escribir test muy claros y de una manera muy sencilla, muy al estilo scripting.
