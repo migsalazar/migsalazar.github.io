@@ -46,6 +46,9 @@ ul {
     }
 }
 
+.hidden {
+  display: none;
+}
 
 .wrapper {
     max-width: 600px;
@@ -55,7 +58,6 @@ ul {
         padding: 20px;
     }
 }
-
 
 .header {
     display: flex;
@@ -86,16 +88,13 @@ ul {
     }
 }
 
-
-.portfolio {
-    padding-bottom: 30px;
-    h1 {
-        font-size: $font-size-read;
-        margin-bottom: 5px;
-    }
+.comments {
+  border-top: 1px solid #e8e8e8;
+  padding: 30px 0;
+  &__wrapper {
+    text-align: center;
+  }
 }
-
-
 
 .blog {
     padding-bottom: 30px;
@@ -140,6 +139,9 @@ ul {
             &:hover {
                 font-weight: bold;
                 border-bottom: 1px dotted;
+            }
+            img {
+              border-bottom: none !important;
             }
         }
         strong {
@@ -212,11 +214,12 @@ ul {
         }
     }
     &_prevnext {
+      margin-bottom: 30px;
       .prev {
         float: left;
       }
       .next {
-          float: right;;
+          float: right;
       }
     }
 }
