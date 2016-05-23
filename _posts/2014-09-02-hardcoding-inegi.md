@@ -5,7 +5,7 @@ category: web_scraping
 tags: [hardcoding, web scraping, inegi]
 ---
 
-Hace más de un año que doy clases en la [UANL](http://www.uanl.mx/). Me resulta bastante interesante por un muchas razones que por el momento prefiero omitir. Durante este tiempo, me he dado cuenta como aprenden diferentes tipos de personas. He encontrado perfiles de todo tipo; desde los que necesitan una guía paso a paso, hasta los que se adelantan en los temas todo el tiempo.
+Hace más de un año que doy clases en la [UANL](http://www.uanl.mx/){:target="_blank"}. Me resulta bastante interesante por un muchas razones que por el momento prefiero omitir. Durante este tiempo, me he dado cuenta como aprenden diferentes tipos de personas. He encontrado perfiles de todo tipo; desde los que necesitan una guía paso a paso, hasta los que se adelantan en los temas todo el tiempo.
 
 ![Image: stevenchasestudios.com]({{ site.baseurl }}/assets/img/posts/2014-09-02-hardcoding-inegi/khancoding.jpg)
 
@@ -15,9 +15,9 @@ Como sea, estoy perdiendo el tema. El asunto aquí, es sobre los usos del lengua
 
 # Hardcoding
 
-Ya hace tiempo que tenía *la espinita* de construir un [crawler / web spider](http://en.wikipedia.org/wiki/Web_crawler). Siempre han llamado mi atención y mejor si lo combinamos con otros temas como la información que se obtiene de los censos y demás.
+Ya hace tiempo que tenía *la espinita* de construir un [crawler / web spider](http://en.wikipedia.org/wiki/Web_crawler){:target="_blank"}. Siempre han llamado mi atención y mejor si lo combinamos con otros temas como la información que se obtiene de los censos y demás.
 
-Así que pensé en hacerle [scrapping](http://en.wikipedia.org/wiki/Web_scraping) al sitio del [INEGI](http://www.inegi.org.mx/); inspeccionando el sitio, *despiojando* url's y variando los parámetros, únicamente con la finalidad de evaluar la idea del scrapper.
+Así que pensé en hacerle [scrapping](http://en.wikipedia.org/wiki/Web_scraping){:target="_blank"} al sitio del [INEGI](http://www.inegi.org.mx/){:target="_blank"}; inspeccionando el sitio, *despiojando* url's y variando los parámetros, únicamente con la finalidad de evaluar la idea del scrapper.
 
 Comencé intentando con información económica:
 
@@ -29,7 +29,7 @@ Entonces, veo un poco sobre los censos económicos del 2009; aquí parece haber 
 
 <a href="{{ site.baseUrl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi02.png" target="_blank"><img src="{{ site.baseUrl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi02.png" width="600" height="364" /></a>
 
-Para indagar que contenido tienen estos archivos embebidos, se puede utilizar cualquier herramienta web para decodificar cada archivo y ver el contenido de las funciones. Doy un vistazo rápido con [ShowMyCode](http://www.showmycode.com/), una herramientilla que me acabo de encontrar <del>entre los arbustos</del> por ahí.
+Para indagar que contenido tienen estos archivos embebidos, se puede utilizar cualquier herramienta web para decodificar cada archivo y ver el contenido de las funciones. Doy un vistazo rápido con [ShowMyCode](http://www.showmycode.com/){:target="_blank"}, una herramientilla que me acabo de encontrar <del>entre los arbustos</del> por ahí.
 
 Dentro de estos *embebidos* aparecen rutas que apuntan a archivos de excel. Supongo están al mismo nivel de directorio de la ruta de la página...
 
@@ -41,7 +41,7 @@ Entonces... mejor ver el HTML que <del>escupe</del> arroja alguno de los enlaces
 
 ( **Update 21/05/2016**: El enlace del párrago siguiente, lo han deshabilitado. Pero alcancé a tomar un screenshot, ver siguiente posterior*)
 
-Y es entonces que me encuentro [esta url](http://www.inegi.org.mx/est/contenidos/espanol/proyectos/censos/ce2009/saic/exportar.asp?Cuadro=INEGI.+Censos+Econ%C3%B3micos+2009.+Resultados+definitivos&amp;Censo=2009&amp;Nacional=&amp;vcampo=H001A&amp;Sector=23&amp;c=17166&amp;Genera=1&amp;formato=Hoja+de+C%C3%A1lculo+Excel%28.xls%29&amp;Modelo=SCIAN&amp;Grupo=AA&amp;Municipio=01001) que descarga en automático un archivo excel; la url no apunta al archivo físico, mas bien, va a una página que visualmente está en blanco y sin contenido:
+Y es entonces que me encuentro [esta url](http://www.inegi.org.mx/est/contenidos/espanol/proyectos/censos/ce2009/saic/exportar.asp?Cuadro=INEGI.+Censos+Econ%C3%B3micos+2009.+Resultados+definitivos&amp;Censo=2009&amp;Nacional=&amp;vcampo=H001A&amp;Sector=23&amp;c=17166&amp;Genera=1&amp;formato=Hoja+de+C%C3%A1lculo+Excel%28.xls%29&amp;Modelo=SCIAN&amp;Grupo=AA&amp;Municipio=01001){:target="_blank"} que descarga en automático un archivo excel; la url no apunta al archivo físico, mas bien, va a una página que visualmente está en blanco y sin contenido:
 
 <a href="{{ site.baseUrl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi04.png" target="_blank"><img src="{{ site.baseUrl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi04.png" width="600" height="212" /></a>
 
@@ -51,4 +51,4 @@ Nótese lo señalado con la flecha... No solo hay consultas SQL en hiddens, tamb
 
 En definitiva, esto se trata de crítica constructiva. También, debo hacer saber que toda esta información es pública, llega a mi navegador y en ningún momento estoy dentro de algún lugar protegido o lo que sea. Mi intención y mensaje, es que **se debe prestar atención aunque para algunos puede no importar, pero habrá quienes sacarán el mayor provecho de estas malas prácticas y mal uso de los lenguajes y/o herramientas**. Es por esto que en ocasiones es importante conocer un mínimo suficiente de teoría.
 
-Al final, dejé la idea del scraper para el INEGI. Encontré este proyecto: [INEGI Fácil](http://inegifacil.com/), que me ha parecido bastante interesante.
+Al final, dejé la idea del scraper para el INEGI. Encontré este proyecto: [INEGI Fácil](http://inegifacil.com/){:target="_blank"}, que me ha parecido bastante interesante.
