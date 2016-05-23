@@ -5,12 +5,12 @@ category: .NET
 tags: [patrones diseño, design patterns, .net, patterns, repository]
 ---
 
-Con el tema en moda *-aunque algo oldie-* de [aplicaciones orientadas al dominio](https://en.wikipedia.org/wiki/Domain-driven_design), seguramente nos hemos llenado la cabeza de conceptos relacionados. Existen montones de implementaciones, y particularmente para los que viajamos al mundo de .NET, tenemos la referencia de [DDD N-Layered .NET 4.0 Architecture Guide](https://blogs.msdn.microsoft.com/marblogging/2011/05/23/domain-drive-design-n-layered-net-4-0-architecture-guide/).
+Con el tema en moda *-aunque algo oldie-* de [aplicaciones orientadas al dominio](https://en.wikipedia.org/wiki/Domain-driven_design){:target="_blank"}, seguramente nos hemos llenado la cabeza de conceptos relacionados. Existen montones de implementaciones, y particularmente para los que viajamos al mundo de .NET, tenemos la referencia de [DDD N-Layered .NET 4.0 Architecture Guide](https://blogs.msdn.microsoft.com/marblogging/2011/05/23/domain-drive-design-n-layered-net-4-0-architecture-guide/){:target="_blank"}.
 
-Entre muchos, el tema de patrones de diseño es principal y uno de estos patrones, en donde yo considero que existe mucho debate, es el [Patrón Repositorio](https://msdn.microsoft.com/en-us/library/ff649690.aspx). Asi que, decidí publicar esto...
+Entre muchos, el tema de patrones de diseño es principal y uno de estos patrones, en donde yo considero que existe mucho debate, es el [Patrón Repositorio](https://msdn.microsoft.com/en-us/library/ff649690.aspx){:target="_blank"}. Asi que, decidí publicar esto...
 
 # La base
-Tomaré como base [la definición](http://martinfowler.com/eaaCatalog/repository.html) un poco más general y -creo- acertada de [Martin Fowler](http://martinfowler.com/) sobre el patrón respositorio:
+Tomaré como base [la definición](http://martinfowler.com/eaaCatalog/repository.html){:target="_blank"} un poco más general y -creo- acertada de [Martin Fowler](http://martinfowler.com/){:target="_blank"} sobre el patrón respositorio:
 
 > A Repository mediates between the domain and data mapping layers, acting like an in-memory domain object collection.
 
@@ -59,7 +59,7 @@ Aunque es claro que se reutiliza código, ¿Realmente el costo de esto vale la p
 
 # La conclusión
 
-Podría ser factible que el repositorio actúe como un `helper` y no como un contrato. De este modo, reutilizar mediante [composición](https://en.wikipedia.org/wiki/Composition_over_inheritance). En mi opinión, me parece mas útil y limpia una solución de este tipo:
+Podría ser factible que el repositorio actúe como un `helper` y no como un contrato. De este modo, reutilizar mediante [composición](https://en.wikipedia.org/wiki/Composition_over_inheritance){:target="_blank"}. En mi opinión, me parece mas útil y limpia una solución de este tipo:
 
 {% gist 57f0221bf6a423b53b15 %}
 
