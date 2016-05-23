@@ -64,6 +64,6 @@ Bonito, ¿no?…
 Así como la acción `screenshot`, hay suficientes funciones de tipo acción o reporteo que han llamado mi atención. Una en particular, es la de [WIP (trabajo en progreso)](https://lefthandedgoat.github.io/canopy/testing.html) del test y asi poder visualizar los elementos que va *“tocando”*. Para esto, se hace uso del operador `&&&&` al definir una función. Generalmente se utilizará en modo `debug` y provoca que el test vaya mas lento e ilumine los elementos del HTML.
 
 # Conclusión
-Sinceramente, me ha parecido bastante interesante y creo que se le puede sacar bastante provecho, solo es cuestión de crear bien organizados los módulos y *va volando*. La genta de QA debería aprovechar un poco más esto, bastante falta les hace :B.
+Sinceramente me ha parecido bastante interesante y creo que se le puede sacar mucho provecho, solo es cuestión de crear bien organizados los módulos y *va volando*. La genta de QA debería aprovechar un poco más esto, bastante falta les hace :B
 
-Claro, algo de crédito al lenguaje no está de más; la verdad es que f# hace que sea más claro el test y muy rápida la implementación.
+Claro, algo de crédito al lenguaje es justo; la verdad es que f# hace que sea más claro el test y muy rápida la implementación.
