@@ -9,10 +9,11 @@ Dos años fueron necesarios para tomar la decisión; siempre tuve en mente que m
 
 Así que, he dejado mi blog en [Wordpress.com](https://wordpress.com/){:target="_blank"} para darle el beneficio de la duda a [Github Pages](https://pages.github.com/){:target="_blank"}. Sinceramente, me siento contento de este cambio, creo que fué la mejor decisión que pude tener respecto a esto.
 
-Ahora bien, lo último que deseo es que esta entrada se vuelva una comparativa entre Wordpress y Github, hoy en día existen muchos post al respecto que se pueden encontrar rápidamente en [Google](https://www.google.com.mx/#q=wordpress+vs+github+pages){:target="_blank"}. Sin embargo y a pesar de esto, me gustaría mencionar las razones que me han llevado a realizar este cambio. **Warning: todas las razones son gustos y perspectivas personales. Por hoy, dejaré a un lado la objetividad**.
+Ahora bien, lo último que deseo es que esta entrada se vuelva una comparativa entre Wordpress y Github, hoy en día existen muchos post al respecto que se pueden encontrar rápidamente en [Google](https://www.google.com.mx/#q=wordpress+vs+github+pages){:target="_blank"}. Sin embargo y a pesar de esto, me gustaría mencionar las razones que me han llevado a realizar este cambio.
+
+> **Warning: Todas las razones siguientes son gustos y perspectivas personales. Por hoy, dejaré a un lado la objetividad**.
 
 # Razones
-*¡Va pues!*, sin orden de relevancia he aqui mis razones:
 
   - **Jekyll**: Simple, blog-aware, static sites. Definitivamente no necesito todo el peso de Wordpress; tener que cargar `1000E+1000` scripts para un simple post, hoy en día suena ridículo. Lo único que necesito es simple texto e imagenes, [Jekyll](https://jekyllrb.com){:target="_blank"} me viene perfecto.
   - **Markdown**: Nada nuevo, pero suficiente para no hardcodear HTML para scrapear css de los templates en Wordpress =")
