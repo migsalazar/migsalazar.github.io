@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: blog.migsalazar.com/sitemap.xml
+Sitemap: http://blog.migsalazar.com/sitemap.xml
