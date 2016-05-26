@@ -28,6 +28,7 @@ gems:
   - github-pages
   - jekyll-gist
   - jekyll-seo-tag
+  - jekyll-feed
   - jekyll-sitemap
 
 whitelist:
