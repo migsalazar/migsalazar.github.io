@@ -9,7 +9,7 @@ Dos años fueron necesarios para tomar la decisión; siempre tuve en mente que m
 
 Así que he dejado mi blog en [Wordpress.com](https://wordpress.com/){:target="_blank"} para darle el beneficio de la duda a [Github Pages](https://pages.github.com/){:target="_blank"}. Sinceramente, me siento contento de este cambio, creo que fué la mejor decisión que pude tener respecto a esto.
 
-Sabemos que Wordpress y Github Pages tienen objetivos/enfoques un tanto diferentes, pero para los fines del blogging y en terminos de elegir, creo que es prudente hacer una ligera revisión. Lo que menos deseo es que esta entrada se convierta en una comparativa directa, para eso hoy en día existen muchos post al respecto que se pueden encontrar rápidamente en [Google](https://www.google.com.mx/#q=wordpress+vs+github+pages){:target="_blank"}; sin embargo y a pesar de esto, me gustaría mencionar las razones que me han llevado a realizar este cambio.
+Sabemos que Wordpress y Github Pages tienen objetivos/enfoques un tanto diferentes, pero para los fines del blogging y en terminos de elegir, creo que es prudente hacer una ligera revisión. Lo que menos deseo es que esta entrada se convierta en una comparativa, para eso hoy en día existen muchos post al respecto que se pueden encontrar rápidamente en [Google](https://www.google.com.mx/#q=wordpress+vs+github+pages){:target="_blank"}; sin embargo y a pesar de esto, me gustaría mencionar las razones que me han llevado a realizar este cambio.
 
 > **Warning: Todas las razones siguientes son gustos y perspectivas personales. Por hoy, dejaré a un lado la objetividad**.
 
