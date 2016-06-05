@@ -129,10 +129,16 @@ ul {
             margin-top: 30px;
             margin-bottom: 5px;
         }
+        h2{
+          font-size: 1.07em;
+          font-weight: 700;
+          margin-top: 30px;
+          margin-bottom: 5px;
+        }
         p {
             font-size: $font-size-read;
             line-height: 150%;
-            margin-bottom: 15px;
+            margin: 15px 0px 15px 0px;
         }
         a {
             text-decoration: none;
@@ -143,6 +149,9 @@ ul {
             img {
               border-bottom: none !important;
             }
+        }
+        div.img {
+          text-align: center;
         }
         strong {
             font-weight: 700;
