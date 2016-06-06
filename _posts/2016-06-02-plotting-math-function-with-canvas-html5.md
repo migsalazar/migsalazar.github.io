@@ -33,7 +33,7 @@ Con nuestro elemento `canvas` en el HTML, podemos acceder al contexto:
 Un punto importante a mencionar es el trabajo con las coordenadas del canvas; desde el punto de vista del elemento canvas, visto como un rectángulo, el sistema de coordenadas tiene el punto *orgien* en el vértice superior izquierdo. Sin embargo, para el plano cartesiano requerimos que se encuentre en el centro. Asi que necesitamos trasladar este punto al centro.
 
 <div class="img">
-<img src="{{ site.baseUrl }}/assets/img/posts/2016-06-02-plotting-math-function-with-canvas-html5/02.jpg" width="150" height="145" />
+<img src="{{ site.baseUrl }}/assets/img/posts/2016-06-02-plotting-math-function-with-canvas-html5/02.jpg" />
 </div>
 
 En adelante, todos los puntos evaluados en la función deben ser calculados a partir del origen.

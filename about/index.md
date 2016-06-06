@@ -2,6 +2,8 @@
 layout: about
 ---
 
+<img src="http://www.doppelme.com/DM14075188HL/crop.gif" border=0>
+
 ...and sometimes I don't know what I'm doing.
 
 Yes, I [tweet](https://twitter.com/migsalazar_){:target="_blank"}, I [code](https://github.com/migsalazar){:target="_blank"} and I have breakfast as everyone else.
