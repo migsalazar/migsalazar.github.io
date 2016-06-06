@@ -13,12 +13,12 @@ Mi aplicación básicamente trataba de un pequeño [applet](https://docs.oracle.
 
 Hoy en día decir algo como *"construiré un applet para implementarlo en la web"* suena como *"Te envío un SMS"*... <del>¿Qué diablos es un SMS?</del>. Así que he intentado explorar algunas alternativas...
 
-  > Warnign: El código siguiente solo funciona para explicar la idea de los pasos a seguir. El código completo se puede encontrar en este [gist](){:target="_blank"}; es demasaido feo y necesita refactorizarse, solo debe tomarse como un prueba de concepto.
+  > Warning: El código siguiente solo funciona para explicar la idea de los pasos a seguir. El código completo se puede encontrar en este [gist](https://gist.github.com/migsalazar/24e6b22e167204e5619fb2bbf01e81b6){:target="_blank"}; es demasaido feo y necesita refactorizarse, solo debe tomarse como un prueba de concepto.
 
 # Canvas HTML5
 [Canvas](http://www.w3schools.com/html/html5_canvas.asp){:target="_blank"} es un elemento de HTML5 que nos sirve para dibujar "lineas" vía scripting (Javascript) en un navegador web. Al acceder a este elemento podemos hacer uso de un conjunto de métodos que nos ayudan a trazar elementos como lineas, cuadros, circulos, etc.
 
-En w3schools podemos encontrar [un tutorial completo](http://www.w3schools.com/canvas/){:target="_blank"} para el manejo de cavas.
+En w3schools podemos encontrar [un tutorial completo](http://www.w3schools.com/canvas/){:target="_blank"} para el manejo de canvas.
 
 ## - Contexto
 Primeramente necesitamos construir nuestro elemento en el HTML; a este elemento le asignamos propiedades básicas (id, ancho y alto), así como un pequeño mensaje en caso de que el navegador no tenga soporte para HTML5:
@@ -84,7 +84,7 @@ De este modo, `plot` será la función encargada de inicializar la gráfica; se 
 A este ejemplo le he hecho un ligero ajuste para animar la gráfica utilizando el método `requestAnimationFrame`, su documentación se encuentra [aquí](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame){:target="_blank"}.
 
 # Conclusión
-Definitivamente muchísimas líneas de código menos con javascript, es un primer buen acercamiento con el trazado de formas en la web utilizando canvas. Aún así, me parece que da mejores resultados implementar este tipo de situaciones con [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG){:target="_blank"}, quizá para un futuro post =)
+Definitivamente con javascript son muchísimas líneas de código menos que en JAVA y es un primer buen acercamiento con el trazado de formas en la web utilizando canvas. Aún así, me parece que da mejores resultados implementar este tipo de situaciones con [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG){:target="_blank"}, quizá para un futuro post =)
 
 <script type="text/javascript" src="/assets/third/jQuery.appear/jquery.appear.js"></script>
 <script type="text/javascript" src="/assets/js/post/2016-06-02-plotting-math-function-with-canvas-html5/canvas.js"></script>
