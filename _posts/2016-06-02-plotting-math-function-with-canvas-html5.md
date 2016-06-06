@@ -43,7 +43,7 @@ Una vez con el contexto en memoria, se debe evaluar cada punto en la función a 
 
 {% gist c9232f86cc0d4f4452210d3f10c7378a %}
 
-Cada iteración del ciclo `for` evalua la `x` en la función `f`. Suponiendo que se desee evaluar una función $$ f(x) = sin(x) + cos(2*x)/2 $$, para valores $$ x = 1, 2, 3... $$ :
+Cada iteración del ciclo `for` evalua la `x` en la función `f`. Suponiendo que se desee evaluar una función $$ f(x) = sin(x) + cos(2*x)/2 $$, para valores $$ x = 1, 2, 3... $$:
 
   $$ f(1) = sin(1) + cos(2*1)/2 $$
 
@@ -51,13 +51,16 @@ Cada iteración del ciclo `for` evalua la `x` en la función `f`. Suponiendo que
 
   $$ f(3) = sin(3) + cos(2*3)/2 $$
 
-  $$ ...$$
+  $$ ... $$
 
 Cada $$ f(x) $$ será el valor del eje $$ Y $$ y con esto generamos un conjunto de puntos:
 
   $$ [1, 0.51714781994], $$
+
   $$ [2, 0.53368152183], $$
-  $$ [3, 0.54959690392],
+
+  $$ [3, 0.54959690392], $$
+
   $$ ... $$
 
 ## - Trazar
