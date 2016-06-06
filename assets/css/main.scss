@@ -193,6 +193,14 @@ ul {
                 margin: auto;
             }
         }
+        img.fix{
+          margin-top: 10px;
+          margin-bottom: 10px;
+          @media screen and (max-width: $br) {
+              width: inherit !important;
+              margin: auto;
+          }
+        }
         blockquote {
           margin: 1.5em 10px;
           padding: 0.5em 10px;
@@ -242,6 +250,10 @@ ul {
 
 .about {
     padding-bottom: 30px;
+    img {
+      padding-left: 20%;
+      padding-bottom: 15px;
+    }
     &__title {
 
         font-size: 1.6em;
