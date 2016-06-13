@@ -1,6 +1,6 @@
 name: Mig Salazar
 author: Mig Salazar
-url: http://blog.migsalazar.com
+url: http://migsalazar.com
 description: Debugging stories, coding, hacking and a little sarcasm
 repository: migsalazar/migsalazar.github.io
 
@@ -31,7 +31,7 @@ gems:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-  
+
 whitelist:
   - github-pages
   - jekyll-gist
