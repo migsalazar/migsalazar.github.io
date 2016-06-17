@@ -7,6 +7,10 @@
 .gist-data {
   border: 1px solid #ddd !important;
 }
+.gist-meta {
+  display: none !important;  /*comment to apply next styles*/
+}
+
 .gist-meta,
 .js-line-number {
   font: 13px !important;
