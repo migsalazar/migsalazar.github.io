@@ -34,7 +34,7 @@ En fin, concluí la búsqueda al encontrar una implementación en Java escrita p
 # Resultado
 El resultado, [RFC Fácil .NET](http://migsalazar.com/RfcFacil/). El código fuente se encuentra en [este repo](https://github.com/migsalazar/RfcFacil){:target="_blank"}.
 
-No quiero a entrar en detalles de la lógica y el contexto, pero me ha parecido interesante compartir el enfoque de la [fachada](https://en.wikipedia.org/wiki/Facade_pattern){:target="_blank"} de esta librería.
+No quiero entrar en detalles de la lógica y el contexto, pero me ha parecido interesante compartir el enfoque de la [fachada](https://en.wikipedia.org/wiki/Facade_pattern){:target="_blank"} de esta librería.
 
 # Fluent Interface
 Fluent Interface es un estilo de implementación de código, si me permiten definirlo asi, para hacer más legible *-o al menos en teoría-* la programación. [Este concepto](http://martinfowler.com/bliki/FluentInterface.html){:target="_blank"} viene atribuido por [Martin Fowler](http://martinfowler.com/){:target="_blank"} por ahí del año 2005.
@@ -58,13 +58,13 @@ Ahora bien, supongamos un descuido al instanciar el objeto. Podría llevar a hac
 
 {% gist d9c2fc49be7cf6425c45734d17bdd5ad %}
 
-Es decir, dado que los primeros tres argumentos son de tipo `string` no hay una forma de advertir al programador si debe ir primero el nombre y en segundo lugar el primer apellido o incluso alguna otra variación. Claro, excepto si se conocen o <del>viven juntos</del> trabajan juntos.
+Es decir, dado que los primeros tres argumentos son de tipo `string`, no hay una forma de advertir al programador si debe ir primero el nombre y en segundo lugar el primer apellido o incluso alguna otra variación. Claro, excepto si se conocen o trabajan juntos <del>viven juntos</del>.
 
 Es cierto, desde [C# 3.0](https://msdn.microsoft.com/en-us/library/bb308966.aspx#csharp3.0overview_topic13){:target="_blank"} podemos inicializar un objeto con las propiedades expuestas:
 
 {% gist f2264d4b1a3baba6826a0435ca760958 %}
 
-Sin embargo, para un constructor con un número relativamente grande de parámetros de entrada, sería bastante ilegible. Incluso, pensemos en una composición *anidada*; una inicialización de las propiedades complejas desde el constructor sería bastante tediosa e ilegible.
+Sin embargo, para un constructor con un número relativamente grande de parámetros de entrada, sería bastante ilegible. Incluso, pensemos en una [composición](https://en.wikipedia.org/wiki/Object_composition){:target="_blank"} *anidada*; una inicialización de las propiedades complejas desde el constructor sería bastante tediosa e ilegible.
 
 # Implementación
 El punto de inicio para [RFC Fácil .NET](http://migsalazar.com/RfcFacil/), partirá de la clase `RfcBuilder`. Esta clase, contendrá los métodos chaining para la asignación de las propiedades.
@@ -77,7 +77,7 @@ Dado que cada método retorna una instancia de la clase `RfcBuilder`, requerimos
 
 {% gist cdfa79ca464a07555981712e7b152b86 %}
 
-Una vez que las propiedades se encuentran establecidas, el método `Build` se encargará de orquestar las llamadas para el cálculo de cada parte del RFC. Lo importante a destacar aquí, es que este método retornará el tipo `Rfc` a través de la invocación de un método estático de la misma clase.
+Del código anterior, el método `Build` se encargará de orquestar las llamadas para el cálculo de cada parte del RFC. Lo importante a destacar aquí, es que este método retornará el tipo `Rfc` a través de la invocación de un método estático de la misma clase.
 
 El contenido de la clase `Rfc`, quedaría algo como lo siguiente:
 
