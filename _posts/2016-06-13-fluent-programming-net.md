@@ -80,3 +80,10 @@ Una vez que las propiedades se encuentran establecidas, el método Build se enca
 El contenido de Rfc, quedaría algo como lo siguiente:
 
 {% gist 1aef0bf943af06592013df30548a37ca }
+
+La intención de tener un constructor privado y acceder a este mediante un método estático, radica básicamente en bloquear al cliente de poder instanciar la clase Rfc con el operador `new`. De esta manera, se forzará a invocar el método `Build` como único punto para el acceso a la instancia.
+
+# Conclusión
+No estoy del todo seguro si este *estilo* sea el más adecuado. Hay bastantes opiniones en contra de usar este enfoque; en general tiene una mala reputación.
+
+Sin embargo, creo que para el contexto en cuestión, es bastante legible hacerlo de esta manera. En lo personal, me ha parecido bastante bien usar este estilo fluido para la calcular el Rfc.
