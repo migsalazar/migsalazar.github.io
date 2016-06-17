@@ -5,9 +5,9 @@ category: .net
 tags: [rfc, sat, .net, design patterns]
 ---
 
-El último año he dedicado la mitad de mi vida rutinaria/laboral/comprobable/profesional/corporativa *(esto requiere un post completo)*, al trabajo con *interfaces* para el manejo de registros de personas, i.e.: UI, plugins/widgets, web services, stored procedures, etc.
+El último año he dedicado la mitad de mi vida laboral al trabajo con *interfaces* para el manejo de registros de personas, i.e.: UI, plugins/widgets, web services, stored procedures, etc. Dentro de la información que se persiste, como parte de requerimiento de negocio, el cálculo *automático* de los diferentes tipos de identificación es indispensable. 
 
-Dentro de la información que se persiste, como parte de requerimiento de negocio, el cálculo *automático* de los diferentes tipos de identificación es indispensable. Y dado que los proyectos en los que estoy involucrado son consumidos por [LATAM](https://en.wikipedia.org/wiki/Latin_America){:target="_blank"}, he tratado con identificaciones de diferentes países, <del>sin exagerar</del> por mencionar:
+Dado que los proyectos en los que estoy involucrado son consumidos por [LATAM](https://en.wikipedia.org/wiki/Latin_America){:target="_blank"}, he tratado con identificaciones de diferentes países, <del>sin exagerar</del> por mencionar:
 
   - México: RFC, CURP
   - Colombia y Chile: RUT
