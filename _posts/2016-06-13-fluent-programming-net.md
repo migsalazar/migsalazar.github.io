@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Calcular RFC en .NET - Fluent style
+title: Fluent Style
 category: .net
 tags: [rfc, sat, .net, design patterns]
-published: false 
+published: false
 ---
 
 El último año he dedicado la mitad de vida rutinaria-laboral-comprobable-profesional-corporativa *-esto requiere un post completo-*, al trabajo con *interfaces* para el manejo de registros de personas, i.e.: UI, plugins/widgets, web services, stored procedures, etc.
@@ -79,4 +79,4 @@ Una vez que las propiedades se encuentran establecidas, el método Build se enca
 
 El contenido de Rfc, quedaría algo como lo siguiente:
 
-1aef0bf943af06592013df30548a37ca
+{% gist 1aef0bf943af06592013df30548a37ca }
