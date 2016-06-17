@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Fluent Style
+title: Fluent Programming .NET
 category: .net
 tags: [rfc, sat, .net, design patterns]
-published: false
 ---
 
 El último año he dedicado la mitad de vida rutinaria-laboral-comprobable-profesional-corporativa *-esto requiere un post completo-*, al trabajo con *interfaces* para el manejo de registros de personas, i.e.: UI, plugins/widgets, web services, stored procedures, etc.
@@ -71,7 +70,7 @@ El punto de inicio para Rfc Facil .NET, partirá de la clase RfcBuilder. Esta cl
 
 Nótese que en cada método, después de establecer el valor de su respectiva propiedad, se retorna la misma instancia en cuestión. Este retorno, hará que el método se convierta en chainable.
 
-Dado que cada método retorna una instancia de RfcBuilder, requerimos un método de acceso para la instancia que inicialmente pensamos construir, es decir, de la clase Rfc.
+Dado que cada método retorna una instancia de RfcBuilder, requerimos un método de acceso para la instancia que inicialmente pensamos construir, es decir, de la clase `Rfc`.
 
 {% gist cdfa79ca464a07555981712e7b152b86 %}
 
@@ -79,11 +78,11 @@ Una vez que las propiedades se encuentran establecidas, el método Build se enca
 
 El contenido de Rfc, quedaría algo como lo siguiente:
 
-{% gist 1aef0bf943af06592013df30548a37ca }
+{% gist 1aef0bf943af06592013df30548a37ca %}
 
 La intención de tener un constructor privado y acceder a este mediante un método estático, radica básicamente en bloquear al cliente de poder instanciar la clase Rfc con el operador `new`. De esta manera, se forzará a invocar el método `Build` como único punto para el acceso a la instancia.
 
 # Conclusión
-No estoy del todo seguro si este *estilo* sea el más adecuado. Hay bastantes opiniones en contra de usar este enfoque; en general tiene una mala reputación.
+No estoy del todo seguro si este *estilo* sea el más adecuado. Hay bastantes [opiniones en contra](https://ocramius.github.io/blog/fluent-interfaces-are-evil/) de usar este enfoque; en general tiene una mala reputación.
 
 Sin embargo, creo que para el contexto en cuestión, es bastante legible hacerlo de esta manera. En lo personal, me ha parecido bastante bien usar este estilo fluido para la calcular el Rfc.
