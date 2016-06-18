@@ -5,9 +5,9 @@ category: .net
 tags: [rfc, sat, .net, design patterns]
 ---
 
-El último año he dedicado la mitad de mi vida laboral al trabajo con *interfaces* para el manejo de registros de personas, i.e.: UI, plugins/widgets, web services, stored procedures, etc. Dentro de la información que se persiste, como parte de requerimiento de negocio, el cálculo *automático* de los diferentes tipos de identificación es indispensable. 
+El último año he dedicado la mitad de mi vida laboral a desarrollar *interfaces* para el manejo de registros de personas, i.e.: UI, plugins/widgets, web services, stored procedures, etc. Dentro de la información que se persiste, como parte de requerimiento de negocio, el cálculo *automático* de los diferentes tipos de identificación es indispensable. 
 
-Dado que los proyectos en los que estoy involucrado son consumidos por [LATAM](https://en.wikipedia.org/wiki/Latin_America){:target="_blank"}, he tratado con identificaciones de diferentes países, <del>sin exagerar</del> por mencionar:
+Dado que los proyectos en los que estoy involucrado son consumidos en [LATAM](https://en.wikipedia.org/wiki/Latin_America){:target="_blank"}, he tratado con identificaciones de diferentes países, <del>sin exagerar</del> por mencionar:
 
   - **México**: RFC, CURP
   - **Colombia y Chile**: RUT
@@ -18,12 +18,12 @@ Y aunque esto es bastante normal, muchas aplicaciones que involucran informació
 
 Para México, es decir, para el cálculo del RFC, ya se contaba con una pequeña librería producto de un desarrollo [in-house](https://en.wikipedia.org/wiki/In-house_software){:target="_blank"}, que ha pasado de generación en generación, tras rotación y rotación, de un incontable número de desarrolladores. Existe código suelto, parches, código no comentado, en fin... es una librería a la cual no se le ha <del>dado cariño</del> prestado mucha atención.
 
-No me atrevo a juzgar *-porque sé que cometo un montón de errores-* si ha sido o no un buen desarrollo, si cuenta con [best practices](https://en.wikipedia.org/wiki/Best_coding_practices){:target="_blank"}, si tiene un [performance](https://en.wikipedia.org/wiki/Software_performance_testing){:target="_blank"} aceptable, si es una librería  [testable](https://en.wikipedia.org/wiki/Software_testability){:target="_blank"}, etc. Sin embargo, **no puedo negar** e ignorar que me ha sido bastante complicado modificar esta librería; fué necesario [debuggear](https://en.wikipedia.org/wiki/Debugging){:target="_blank"} línea a línea y un par de horas en estatus *`Don't disturb`* para entender qué/cómo/cuándo/dónde funciona. Y aún así, al día de hoy se siguen presentando problemas en ciertos escenarios muy particulares.
+No me atrevo a juzgar *-porque sé que cometo un montón de errores-* si ha sido o no un buen desarrollo, si cuenta con [best practices](https://en.wikipedia.org/wiki/Best_coding_practices){:target="_blank"}, si tiene un [performance](https://en.wikipedia.org/wiki/Software_performance_testing){:target="_blank"} aceptable, si es una librería  [testable](https://en.wikipedia.org/wiki/Software_testability){:target="_blank"}, etc. Sin embargo, **no puedo negar** e ignorar, que me ha sido bastante complicado modificar esta librería; fué necesario [debuggear](https://en.wikipedia.org/wiki/Debugging){:target="_blank"} línea a línea y un par de horas en estatus *`Don't disturb`* para entender qué/cómo/cuándo/dónde funciona. Y aún así, al día de hoy se siguen presentando problemas en ciertos escenarios muy particulares.
 
 Además, *-hasta donde sé-* no hay evidencia de la base de la construcción de esta librería; es decir, las reglas para el cálculo no están alineadas a un documento oficial. Si a esto le sumamos el hecho de que la librería es de código cerrado, me ha parecido justo y necesario buscar alguna alternativa.
 
 # Búsqueda
-Lo habitual, primero hacer un "barrido" rápido por <del>la web</del> google para identificar si alguien más se encuentra trabajando con el cálculo del RFC; podría sacar provecho y quizá alguna referencia.
+Lo habitual, primero hacer un *"barrido"* rápido por <del>la web</del> google para identificar si alguien más se encuentra trabajando con el cálculo del RFC; podría sacar provecho y quizá alguna referencia.
 
 Casi obvio, sí. Montones de implementaciones para el cálculo en diferentes lenguajes, los hay en: C, C++, VB, VB Script, Fox Pro, Progress, Java, Javascript, T-SQL, PL/SQL, Excel, Excel con macros, etc. Los más astutos te venden un programa con su respectivo wizard que realiza el cálculo. 
 
