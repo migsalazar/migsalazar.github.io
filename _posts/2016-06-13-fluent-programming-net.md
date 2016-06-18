@@ -83,7 +83,7 @@ El contenido de la clase `Rfc`, quedaría algo como lo siguiente:
 
 {% gist 1aef0bf943af06592013df30548a37ca %}
 
-La intención de tener un constructor privado y acceder a este mediante un método estático, radica básicamente en evitar que el cliente construya una instancia la clase `Rfc` con el operador `new`. De esta manera, se forzará a invocar el método `Build` como único punto para el acceso a la instancia.
+La intención de tener un constructor privado y acceder a este mediante un método estático, radica básicamente en evitar que el cliente construya una instancia de la clase `Rfc` con el operador `new`. De esta manera, se forzará a invocar el método `Build`, de la clase `RfcBuilder`, para mantener unúnico punto de acceso a la instancia.
 
 Teniendo esto, nuestro código cliente que implementa el cálculo del RFC, se vería de la siguiente manera:
 
