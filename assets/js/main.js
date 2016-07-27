@@ -40,7 +40,7 @@ $(function() {
     	//pipe, underscore, terminal
     	cursortype: 'underscore',
     	//delay between words
-    	delay: 200,
+    	delay: 250,
     	//text type
     	text: ['migs<i>.</i>io'],
     	//callback
