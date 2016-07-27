@@ -42,9 +42,9 @@ $(function() {
     	//delay between words
     	delay: 200,
     	//text type
-    	text: ['migs.io'],
+    	text: ['migs<i>.</i>io'],
     	//callback
     	onTyped: function() { }
 	};
-	$('h1 i').typian(params);
+	$('h1').empty().typian(params);
 });
