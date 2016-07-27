@@ -32,4 +32,19 @@ $(function() {
     //     $(this).removeClass('fa fa-child animated ' + anim);
     //   });
     // });
+    
+    //just for fun #2
+    var params = {
+    	//show cursor
+    	cursor: true,
+    	//pipe, underscore, terminal
+    	cursortype: 'underscore',
+    	//delay between words
+    	delay: 200,
+    	//text type
+    	text: ['migs.io'],
+    	//callback
+    	onTyped: function() { }
+
+		$('h1 i').typian(params);
 });
