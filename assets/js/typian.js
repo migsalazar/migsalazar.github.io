@@ -8,66 +8,123 @@
 ; (function (plug) { plug(window.jQuery, window, document); }
 (function ($, window, document, undefined) {
 
-  'use strict';
+	'use strict';
 	var plugin = 'typian',
-		  namespacePlugin = 'typian';
+		namespacePlugin = 'typian';
 
 	//constructor
 	function Plugin(el, opts) {
-    this.opts = opts;
-    this.el = el;
-    this.$el = $(this.el);
+		
+		this._defaults = $.fn[plugin].defaults;
+		this.opts = $.extend(true, {}, this._defaults, opts);
+		
+		this.timer = 0;
+		this.counter = 0;
+		
+		this.el = el;
+		this.$el = $(this.el);
 
-    this.text = this.opts.text;
-    this.textArray = this.text.split('');
-    this.textPart = '';
-    this.timer = 0;
-
-    this.init();
+		this.init();
 	};
 
 	// Methods
 	$.extend(Plugin.prototype, {
+
+		//
 		init: function () {
-
-      if(this.opts.cursor) {
-        this._setCursor();
-      }
-
-      this._animate();
+			this._setCursor();
+			this._setText();
+			this._animate();
 		},
 
-    //public methods
+		//
+		_setCursor: function() {
+			var that = this;
+			if(that.opts.cursor) {
+				that.$cursor = $('<span class="'+ namespacePlugin +'-cursor">_</span>');
 
-    //private _methods
-    _setCursor: function() {
-      var that = this;
+				that.$el.append(that.$cursor);
 
-      that.cursor = $('<span class="'+ namespacePlugin +'-cursor">_</span>')
-                    .insertAfter(that.$el);
+				(function blink(){
+				   that.$cursor.fadeOut(500).fadeIn(500, blink);
+				})();
+			}
+		},
 
-      that.$cursor = that.cursor;
+		//
+		_setText: function() {
+		  var that = this;
+		  
+			if(!$.isArray(that.opts.text)) {
+				var texts = [];
+				texts.push(that.opts.text);
+				that.opts.text = texts;
+			}
+			
+			that.strings = that.opts.text.length;
+		},
 
-      (function blink(){
-         that.$cursor.fadeOut(500).fadeIn(500, blink);
-      })();
-    },
+		//
 		_animate: function() {
-      var that = this;
+			var that = this;
+			
+			if(that.strings > 0) {
+				
+				if(that.counter > 0) {
+					that._setBreak();
+				}
+				
+				that.text = that.opts.text[0];
+				that.textArray = that.text.split('');
+				that.textPart = '';
+				that.counter++;
+				
+				that.$cursor.before('<span class="' + namespacePlugin + '-active"></span>');
+			
+				that._animatePart();
+			}
 
-      if(that.textArray.length > 0) {
-        that.textPart += that.textArray.shift();
-        that.$el.html(that.textPart);
-      }
-      else {
-        clearTimeout(that.timer);
-      return false;
-      }
+			that._callback('onTyped', [that]);
+		},
 
-      that.timer = setTimeout(function(){
-        that._animate();
-      }, that.opts.delay);
-    }
+		//
+		_setBreak: function() {
+			var that = this;
+
+			that.$cursor.before('<br />');
+		},
+
+		//
+		_animatePart: function() {
+			var that = this;
+			
+			var $typian = that.$el.find('.'+ namespacePlugin + '-active');
+			
+			if(that.textArray.length > 0) {
+				that.textPart += that.textArray.shift();
+				$typian.html(that.textPart);
+			}
+			else {
+				$typian.removeClass('typian-active');
+				clearTimeout(that.timer);
+				that.strings--;
+				that.opts.text.splice(0, 1);
+				that._animate();
+			}
+
+			that.timer = setTimeout(function(){
+				that._animatePart();
+			}, that.opts.delay);
+		},
+		
+		//
+		_callback: function (func, args) {
+				var funcion = this.opts[func];
+
+				if (typeof funcion === 'function') {
+					funcion.apply(this.element, args);
+				}
+		}
 	});
 
 	// Single instance
@@ -77,49 +134,54 @@
 
 		if (options === undefined || typeof options === 'object') {
 			return this.each(function () {
-			if (!$.data(this, namespacePlugin)) {
-				$.data(this, namespacePlugin, new Plugin(this, options));
-			}
+				if (!$.data(this, namespacePlugin)) {
+					$.data(this, namespacePlugin, new Plugin(this, options));
+				}
 			});
 		}
 		else {
-		if (typeof options === 'string' && options[0] !== '_' && options !== 'init') {
-			this.each(function () {
-				instance = $.data(this, namespacePlugin);
-				if (instance instanceof Plugin) {
-					if (typeof instance[options] === 'function') {
-						returns = instance[options].apply(instance, Array.prototype.slice.call(arguments, 1));
+			if (typeof options === 'string' && options[0] !== '_' && options !== 'init') {
+				this.each(function () {
+					
+					instance = $.data(this, namespacePlugin);
+					
+					if (instance instanceof Plugin) {
+						if (typeof instance[options] === 'function') {
+							returns = instance[options].apply(instance, Array.prototype.slice.call(arguments, 1));
+						}
+						else {
+							instance._callback('onError', ['Unknow method'])
+						}
 					}
 					else {
-						instance._callback('onError', ['Unknow method'])
+						throw 'error: null object';
 					}
-				}
-				else {
-					throw 'error: null object';
-				}
-			});
-			return returns !== undefined ? returns : this;
-		}
-		else {
-			throw 'error: illegal';
-		}
+				});
+				
+				return returns !== undefined ? returns : this;
+			}
+			else {
+				throw 'error: illegal';
+			}
 		}
 	};
 
 	// Default config
 	$.fn[plugin].defaults = {
 
-    //show cursor
-    cursor: true,
+		//show cursor
+		cursor: true,
 
-    //pipe, underscore, terminal
-    cursortype: 'underscore',
+		//pipe, underscore, terminal
+		cursortype: 'underscore',
 
-    //delay between words
-    delay: 200,
+		//delay between words
+		delay: 200,
 
-    //text type
-    text: 'typing...'
+		//text type
+		text: 'typing...',
+
+		onTyped: function() { }
 	};
-})
-);
+	
+}));
