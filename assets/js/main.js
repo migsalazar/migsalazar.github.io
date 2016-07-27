@@ -44,9 +44,7 @@ $(function() {
     	//text type
     	text: ['migs<i>.</i>io'],
     	//callback
-    	onTyped: function() { 
-    		$('.blog').show();
-    	}
+    	onTyped: function() { }
 	};
 	$('.header h1').empty().typian(params);
 });
