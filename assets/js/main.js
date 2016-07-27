@@ -46,5 +46,5 @@ $(function() {
     	//callback
     	onTyped: function() { }
 	};
-	$('h1').empty().typian(params);
+	$('.header h1').empty().typian(params);
 });
