@@ -5,7 +5,7 @@ category: software
 tags: [languages, software, software development]
 ---
 
-Ya casi se acaba el año y no quiero dejar pasar la navidad sin poder reglarles un comentario :B
+Ya casi se acaba el año y no quiero dejar pasar la Navidad sin poder regalarles un comentario :B
 
 Ha sido bastante variable este período -al menos para mí-, pasando de horarios muy rigurosos a otros más flexibles y me ha llevado a tener la oportunidad de participar en más ideas o proyectos con más variaciones y diferentes contextos. Esto mismo, ha ocasionado que participe en el inicio de un proyecto y, desde el lado técnico, partiendo de la decisión del [stack](https://en.wikipedia.org/wiki/Solution_stack) completo de herramientas y lenguajes a utilizar.
 
