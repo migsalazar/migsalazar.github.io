@@ -32,7 +32,7 @@ $(function() {
     //     $(this).removeClass('fa fa-child animated ' + anim);
     //   });
     // });
-    
+
     //just for fun #2
     var params = {
     	//show cursor
@@ -42,7 +42,7 @@ $(function() {
     	//delay between words
     	delay: 250,
     	//text type
-    	text: ['migs<i>.</i>io'],
+    	text: ['Mig<i>.</i>notes'],
     	//callback
     	onTyped: function() { }
 	};
