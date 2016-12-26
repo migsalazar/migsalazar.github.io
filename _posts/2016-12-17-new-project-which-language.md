@@ -55,30 +55,28 @@ Por otra parte, ayuda mucho tener la información sobre el costo de incluir un n
 
 >No digo que la herramienta sea mala, o que la decisión haya sido equivocada. El punto aquí es que la solución construída se vió afectada por la escasez de desarrolladores para esta herramienta. Quizá podrían haber pensado en la posibilidad del trabajo remoto pero supongo que esto no fué permitido.
 
-Teniendo en mano esta información y observando la evolución de los lenguajes, podemos entonces pensar un poco el futuro que tiene. Todos sabemos [lo que les pasó](https://www.quora.com/Adobe-Flash-How-did-Flash-die-so-quickly) a los desarrolladores de [Flash](http://www.adobe.com/software/flash/about/) y [ActionScript](http://www.adobe.com/devnet/actionscript.html).
+Teniendo en mano esta información y observando la evolución de los lenguajes, podemos entonces pensar un poco en el futuro que tiene. Todos sabemos [lo que les pasó](https://www.quora.com/Adobe-Flash-How-did-Flash-die-so-quickly) a los desarrolladores de [Flash](http://www.adobe.com/software/flash/about/) y [ActionScript](http://www.adobe.com/devnet/actionscript.html).
 
 Todo lo anterior nos lleva a voltear a ver a la empresa o comunidad que se encuentre detrás del desarrollo de alguna herramienta y/o lenguaje. Aquí pudieramos extendernos en términos como [vendor lock-in](https://en.wikipedia.org/wiki/Vendor_lock-in) y entre otros debates, pero no es la intención del post.
 
 
 # Filosofía y Paradigma
-El mismo lenguaje en sí podría darnos restricciones o ventajas. Y aunque en la mayoría de las ocasiones es cuestión de gustos, es cierto que existen situaciones que pueden llegar a mantenernos dependientes de algo en particular.
-
 Con filosofía del lenguaje, me refiero a aquello que motiva la construcción de un lenguaje o herramienta. Cada lenguaje tiene un trasfondo ideológico que intenta expresar desde su sintaxis *-quizá me estoy volviendo loco-*.
 
 Por ejemplo, en [la portada de la página](https://www.ruby-lang.org/en/) de Ruby se encuentra la siguiente frase:
 
 > A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
 
-Por otro lado, pensemos en el [paradigma](https://en.wikipedia.org/wiki/Programming_paradigm). Actualmente es muy usual construir aplicaciones para humanos con [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming), pero existen montones de paradigmas y no necesariamente tenemos que hablar de aplicaciones con un uso operativo.
+Por otro lado, pensemos en el [paradigma](https://en.wikipedia.org/wiki/Programming_paradigm). Actualmente es muy usual construir aplicaciones para humanos con [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming), pero existen montones de paradigmas y no necesariamente tenemos que hablar de aplicaciones con un uso "operativo".
 
-Quizá requerimos un [test de interfaz de usuario](http://migsalazar.com/2014/08/20/web-testing-canopy/) y nos vendría bien utilizar [F#](http://fsharp.org/), que al ser un lenguaje de [programación funcional](https://en.wikipedia.org/wiki/Functional_programming) hace que los test quedan bastante legibles *-al menos en mi opinión-*; y aunque es posible darle un enfoque de OOP, hacerlo no aportaría alguna ventaja contra otro lenguaje del mismo paradigma.
+Quizá requerimos un [test de interfaz de usuario](http://migsalazar.com/2014/08/20/web-testing-canopy/) y nos vendría bien utilizar [F#](http://fsharp.org/), que al ser un lenguaje de [programación funcional](https://en.wikipedia.org/wiki/Functional_programming) hace que los test quedan bastante legibles *-al menos en mi opinión-* (También es posible darle un enfoque de OOP a F#, pero hacerlo creo que no aporta alguna ventaja contra otro lenguaje del mismo paradigma).
 
 También podemos profundizar un poco más e indagar sobre el [tipado](https://en.wikipedia.org/wiki/Strong_and_weak_typing) del lenguaje, si cuenta con mecanismos que promuevan la legibilidad y productividad como el [pattern matching](http://docs.scala-lang.org/tutorials/tour/pattern-matching.html) y la [inmutabilidad](http://www.scala-lang.org/docu/files/collections-api/collections_1.html) en [Scala](http://docs.scala-lang.org/), etc, etc, y más etc. Pero todas estas situaciones pueden ser algo más subjetivo en la mayoría de los casos.
 
 # Rendimiento y Seguridad
 El performance y la seguridad siempre son super importantes, pero actualmente la mayoría de los lenguajes y el hardware existente nos dán bastantes herramientas para no tener que preocuparnos por esto.
 
-Lo cierto es que un código mal hecho puede afectar al performance y a la seguridad. Pero obviamente esto no es culpa del lenguaje, si no más bien del desarrollador.
+Lo cierto es que [un código mal hecho](http://migsalazar.com/2014/09/02/hardcoding-inegi/) puede afectar al performance y/o la seguridad. Pero obviamente esto no es culpa del lenguaje, si no más bien del desarrollador.
 
 Por lo cual, el performance y la seguridad es mas bien un tema de arquitectura y diseño.
 
