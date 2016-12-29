@@ -82,7 +82,7 @@ Por lo cual, el performance y la seguridad es mas bien un tema de arquitectura y
 
 # Conclusiones
 
-Venga ya!, no alarguemos mas esto porque se me acaba la Navidad. Para decidir que lenguaje a utilizar me gustaría resumierlo en lo siguientes puntos:
+Venga ya!, no alarguemos mas esto porque se me acaba la Navidad. Para decidir que lenguaje a utilizar me gustaría resumirlo en lo siguientes puntos:
 
 - Conocimiento actual
 - Curva de aprendizaje
