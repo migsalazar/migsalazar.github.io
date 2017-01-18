@@ -29,7 +29,7 @@ Los saltos de adopción de tecnología deben hacerse con cuidado. Quizá una bue
 
 Supongamos, por ejemplo, que requerimos utilizar Java para un nuevo proyecto; es más fácil que alguien con experiencia en C# se mueva a Java, que alguien con experiencia en Ruby. O quizá por alguna razón es necesario utilizar [Laravel](https://laravel.com/), sería más sencillo adoptarlo para alguien que conoce [ASP .NET](https://www.asp.net/) que alguien que esta acostumbrado a [Django](https://www.djangoproject.com/).
 
-En fin, múltiples ejemplos pueden mencionarse pero el punto es que habrá tecnologías similares y otras no tanto, y que puede costarnos mas o menos adaptarnos.
+En fin, múltiples ejemplos pueden mencionarse pero el punto es que habrá tecnologías similares y otras no tanto, y que puede costarnos más o menos adaptarnos.
 
 # Consumo
 Este punto quizá va de la mano con el entorno, pero preferí separarlo. La tecnología a desarrollar va depender del tipo de consumo que se pretenda generar para algún producto de software.
