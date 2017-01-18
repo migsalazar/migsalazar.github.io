@@ -7,9 +7,9 @@ tags: [languages, software, software development]
 
 Ya casi se acaba el año y no quiero dejar pasar la Navidad sin poder regalarles un comentario :B
 
-Para mi ha sido bastante variable este período, pasando de horarios muy rigurosos a otros más flexibles y me ha llevado a tener la oportunidad de participar en más ideas o proyectos con más variaciones y diferentes contextos. Esto mismo, ha ocasionado que participe en el ciclo completo de un proyecto y, desde el lado técnico, partiendo de la decisión del [stack](https://en.wikipedia.org/wiki/Solution_stack) completo de herramientas y lenguajes a utilizar.
+Para mi ha sido bastante variable este período, pasando de horarios muy rigurosos a otros más flexibles y me ha llevado a tener la oportunidad de participar en más ideas o proyectos, con más variaciones y diferentes contextos. Y cada vez es más frecuente tener que evaluar diferentes situaciones, pero pensando en el lado técnico, *semana tras semana* he tenido que evaluar el [stack](https://en.wikipedia.org/wiki/Solution_stack) completo de herramientas y lenguajes a utilizar.
 
-Quiero *rescatar* algunos puntos que nosotros, en [Devian](http://www.devianlabs.com), tomamos en cuenta sobre el lenguaje y herramientas a utilizar en un proyecto de software. Trataré de ir en orden de importancia, pero no necesariamente tiene que aplicar igual para todos los casos.
+Por lo anterior, quiero *rescatar* algunos puntos que nosotros, en [Devian](http://www.devianlabs.com), tomamos en cuenta sobre el lenguaje y herramientas a utilizar en un proyecto de software. Trataré de ir en orden de importancia, pero no necesariamente tiene que aplicar igual para todos los casos.
 
 # Entorno
 En muchas ocasiones no tenemos restricciones por el conjunto de tecnologías, frameworks y/o herramientas a utilizar. Pero si es así, no tenemos otra opción más que adecuar nuestros conocimientos a estas.
