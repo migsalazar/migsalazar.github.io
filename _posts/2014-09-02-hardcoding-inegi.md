@@ -11,11 +11,11 @@ Hace más de un año que doy clases en la [UANL](http://www.uanl.mx/){:target="_
 
 Durante las clases, generalmente insisto bastante en aspectos algo teóricos tratando de no descuidar lo práctico. En ocasiones, hay quienes insisten en que lo teórico es poco relevante y prefieren omitir mucha información para llegar a la práctica sin ver un poco la teoría. No pienso que sea algo malo, me parece una manera perfecta de aprender, el aprender con el hacer... pero tampoco hay que exagerar.
 
-Como sea, estoy perdiendo el tema. El asunto aquí, es sobre los usos del lenguaje y/o herramientas, hasta la aplicación que se les da. Sin que parezca critica a desarrolladores que empiezan (o empezamos) en algún lenguaje o framework nuevo, mi entrada viene motivada por la siguiente historia...
+Como sea, estoy perdiendo el tema. El asunto aquí, es sobre los usos del lenguaje y/o herramientas, hasta la aplicación que se les da. Sin que parezca crítica a desarrolladores que empiezan (o empezamos) en algún lenguaje o framework nuevo, mi entrada viene motivada por la siguiente historia...
 
 # Hardcoding
 
-Ya hace tiempo que tenía *la espinita* de construir un [crawler / web spider](http://en.wikipedia.org/wiki/Web_crawler){:target="_blank"}. Siempre han llamado mi atención y mejor si lo combinamos con otros temas como la información que se obtiene de los censos y demás.
+Ya hace tiempo que tenía *la espinita* de construir un [crawler / web spider](http://en.wikipedia.org/wiki/Web_crawler){:target="_blank"}. Siempre han llamado mi atención y que mejor si lo combinamos con otros temas como la información que se obtiene de los censos y demás.
 
 Así que pensé en hacerle [scrapping](http://en.wikipedia.org/wiki/Web_scraping){:target="_blank"} al sitio del [INEGI](http://www.inegi.org.mx/){:target="_blank"}; inspeccionando el sitio, *despiojando* url's y variando los parámetros, únicamente con la finalidad de evaluar la idea del scrapper.
 
