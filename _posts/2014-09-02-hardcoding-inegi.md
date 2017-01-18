@@ -47,7 +47,7 @@ Y es entonces que me encuentro [esta url](http://www.inegi.org.mx/est/contenidos
 
 Nótese lo señalado con la flecha y las líneas previas... No solo hay consultas SQL en hiddens, también una [cadena de conexión](https://www.connectionstrings.com/)!.
 
-**HTML**, definitivamente, **no es para almacenar ese tipo de información**, esto debería estar escrito en otro lugar. No sé cual haya sido la razón de hacerlo de esa manera; quiero suponer que está ligado con mi sospecha del modo en que se generan los documentos en excel, dinámicamente en memoria y no son archivos físicos en disco. Pero de cualquier forma, esto último no lo justifica...
+**HTML**, definitivamente, **no es para almacenar ese tipo de información**, esto debería estar escrito en otro lugar. No sé cual haya sido la razón de hacerlo de esa manera; quiero suponer que está ligado con el modo en que se generan los documentos en excel, que a juzgar por el resto del html, es lógico que se construyen dinámicamente y no son archivos físicos en disco. Pero de cualquier forma, esto último no lo justifica...
 
 En definitiva, esto se trata de crítica constructiva. Mi intención y mensaje es que **se debe prestar atención y, aunque para algunos puede no importar, habrá quienes sacarán el mayor provecho de estas malas prácticas y mal uso de los lenguajes y/o herramientas**. Es por esto que en ocasiones es importante conocer un mínimo suficiente de teoría.
 
