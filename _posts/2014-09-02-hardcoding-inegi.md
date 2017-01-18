@@ -9,7 +9,7 @@ Hace más de un año que doy clases en la [UANL](http://www.uanl.mx/){:target="_
 
 ![Image: stevenchasestudios.com]({{ site.baseurl }}/assets/img/posts/2014-09-02-hardcoding-inegi/khancoding.jpg)
 
-Durante las clases, generalmente insisto bastante en aspectos algo teóricos tratando de no descuidar lo práctico. En ocasiones, hay quienes insisten en que lo teórico es muy relevante y deciden omitir mucha información para llegar a la práctica sin ver un poco la teoría. No pienso que sea algo malo, me parece una manera perfecta de aprender, el aprender con el hacer... pero tampoco hay que exagerar.
+Durante las clases, generalmente insisto bastante en aspectos algo teóricos tratando de no descuidar lo práctico. En ocasiones, hay quienes insisten en que lo teórico es muy irrelevante y prefieren omitir mucha información para llegar a la práctica sin ver un poco la teoría. No pienso que sea algo malo, me parece una manera perfecta de aprender, el aprender con el hacer... pero tampoco hay que exagerar.
 
 Como sea, estoy perdiendo el tema. El asunto aquí, es sobre los usos del lenguaje y/o herramientas, hasta la aplicación que se les da. Sin que parezca critica a desarrolladores que empiezan (o empezamos) en algún lenguaje o framework nuevo, mi entrada viene motivada por la siguiente historia...
 
