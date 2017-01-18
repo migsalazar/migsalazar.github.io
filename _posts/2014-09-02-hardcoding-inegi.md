@@ -31,13 +31,13 @@ Entonces, revisé un poco ms a fondo sobre los censos económicos, puntualmente,
 
 Para indagar que contenido tienen estos archivos embebidos, se puede utilizar cualquier herramienta web para decodificar cada archivo y ver el contenido de las funciones. Echo un vistazo rápido con [ShowMyCode](http://www.showmycode.com/){:target="_blank"}, una herramientilla que me acabo de encontrar <del>entre los arbustos</del> por ahí.
 
-Dentro de estos *embebidos* aparecen rutas que apuntan a archivos de excel. Supongo están al mismo nivel de directorio de la ruta de la página, pero da igual...
+Dentro de estos *embebidos*, aparecen rutas que apuntan a archivos de excel. Supongo están al mismo nivel de directorio de la ruta de la página, pero da igual...
 
 <a href="{{ site.baseUrl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi03.png" target="_blank"><img src="{{ site.baseUrl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi03.png" width="600" height="471" /></a>
 
-En fin, sigo indagando... Así como archivos físicos, veo que también hay algunas opciones para exportar a `xlsx`. Entonces, descargo un par de ellos, para ver su tamaño, comparar la información con la de la página y quizá podría inyectar algunos *bot-clicks* con javascript; quizá sea útil descargar automáticamente estos archivos. O incluso, un [mágico](https://www.gnu.org/software/wget/) `wget` podría funcionar, pero... *quizá después*.
+En fin, sigo indagando... Así como archivos físicos, veo que también hay algunas opciones para exportar a `xlsx`. Entonces, descargo un par de ellos, para ver su tamaño, comparar la información con la de la página y quizá podría inyectar algunos *bot-clicks* con javascript; quizá sea útil descargar automáticamente estos archivos. O incluso, un [mágico](https://www.gnu.org/software/wget/) `wget` podría funcionar, pero... *nah que flojera*.
 
-Entonces... quizá haya algo interesante en el HTML que <del>escupe</del> arroja alguno de los enlaces que están ligados al `post` de los botones de exportar, para ir directo a los archivos. Incluso, estos archivos muy probablemente sean generados dinámicamente *al vuelo*.
+Entonces... quizá haya algo interesante en el HTML que <del>escupe</del> arroja alguno de los enlaces que están ligados al `post` de los botones de exportar, para ir directo a los archivos. Incluso, estos archivos muy probablemente sean generados dinámicamente -*al vuelo*-.
 
 ( **Update 21/05/2016**: El enlace del párrago siguiente, lo han deshabilitado. Pero alcancé a tomar un screenshot...*)
 
@@ -45,10 +45,10 @@ Y es entonces que me encuentro [esta url](http://www.inegi.org.mx/est/contenidos
 
 <a href="{{ site.baseUrl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi04.png" target="_blank"><img src="{{ site.baseUrl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi04.png" width="600" height="212" /></a>
 
-Nótese lo señalado con la flecha... No solo hay consultas SQL en hiddens, también una [cadena de conexión](https://www.connectionstrings.com/)!. Quien escribió este HTML debió haber pensado en que alguien inspeccionaría el HTML :B
+Nótese lo señalado con la flecha y las líneas previas... No solo hay consultas SQL en hiddens, también una [cadena de conexión](https://www.connectionstrings.com/)!.
 
-**HTML** obviamente **no es para almacenar ese tipo de información**, esto debería estar escrito en otro lugar. No sé cual haya sido la razón de hacerlo de esa manera; quiero suponer que está ligado con mi sospecha de que se generan dinámicamente en memoria y no son archivos físicos en disco. Aún así, esto último no lo justifica...
+**HTML**, definitivamente, **no es para almacenar ese tipo de información**, esto debería estar escrito en otro lugar. No sé cual haya sido la razón de hacerlo de esa manera; quiero suponer que está ligado con mi sospecha del modo en que se generan los documentos en excel, dinámicamente en memoria y no son archivos físicos en disco. Pero de cualquier forma, esto último no lo justifica...
 
-En definitiva, esto se trata de crítica constructiva. Mi intención y mensaje, es que **se debe prestar atención y, aunque para algunos puede no importar, habrá quienes sacarán el mayor provecho de estas malas prácticas y mal uso de los lenguajes y/o herramientas**. Es por esto que en ocasiones es importante conocer un mínimo suficiente de teoría.
+En definitiva, esto se trata de crítica constructiva. Mi intención y mensaje es que **se debe prestar atención y, aunque para algunos puede no importar, habrá quienes sacarán el mayor provecho de estas malas prácticas y mal uso de los lenguajes y/o herramientas**. Es por esto que en ocasiones es importante conocer un mínimo suficiente de teoría.
 
-Al final, siento decepcionarlos, pero dejé la idea del scraper para el INEGI *ba dum tss!*. Encontré este proyecto: [INEGI Fácil](http://inegifacil.com/){:target="_blank"}, y me ha parecido bastante interesante.
+Finalmente, siento decepcionarlos, pero dejé la idea del scraper para el INEGI *ba dum tss!*. Encontré este proyecto: [INEGI Fácil](http://inegifacil.com/){:target="_blank"}, y me ha parecido bastante interesante.
