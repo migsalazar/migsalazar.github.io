@@ -23,21 +23,21 @@ Intenté con información económica:
 
 <a href="{{ site.baseurl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi01.png" target="_blank"><img src="{{ site.baseUrl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi01.png" width="600" height="365" /></a>
 
-Hasta aquí me pareca que podría funcionar, los parámetros de la url no necesitan alguna *traducción* y al variar la url arroja diferentes tablas. Es un buen comienzo.
+Hasta aquí me parece que podría funcionar, los parámetros de la url no necesitan alguna *traducción* y al variar la url arroja diferente información, es decir, diferentes tablas de html. Es un buen comienzo.
 
-Entonces, revisé un poco ms a fondo sobre los censos económicos, puntualmente, del 2009; aquí parece haber una mezcla de tecnologías. Dentro de cada página hay muchos frames y archivos `swf` embebidos:
+Revisé un poco más a fondo sobre los censos económicos, puntualmente, del 2009; aquí parece haber una mezcla de tecnologías. Dentro de cada página hay muchos frames y archivos `swf` embebidos:
 
 <a href="{{ site.baseUrl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi02.png" target="_blank"><img src="{{ site.baseUrl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi02.png" width="600" height="364" /></a>
 
-Para indagar que contenido tienen estos archivos embebidos, se puede utilizar cualquier herramienta web para decodificar cada archivo y ver el contenido de las funciones. Echo un vistazo rápido con [ShowMyCode](http://www.showmycode.com/){:target="_blank"}, una herramientilla que me acabo de encontrar <del>entre los arbustos</del> por ahí.
+Para indagar que contenido tienen estos archivos `swf` embebidos, se puede utilizar cualquier herramienta web para decodificar cada archivo y ver el contenido de las funciones. Echo un vistazo rápido con [ShowMyCode](http://www.showmycode.com/){:target="_blank"}, una herramientilla que me acabo de encontrar <del>entre los arbustos</del> por ahí.
 
-Dentro de estos *embebidos*, aparecen rutas que apuntan a archivos de excel. Supongo están al mismo nivel de directorio de la ruta de la página, pero da igual...
+Dentro de estos *embebidos*, aparecen rutas que apuntan a archivos de excel. Es lógico que están al mismo nivel de directorio de la ruta de la página y descargo algunos; quizá luego pueden servir pero por ahora da igual...
 
 <a href="{{ site.baseUrl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi03.png" target="_blank"><img src="{{ site.baseUrl }}/assets/img/posts/2014-09-02-hardcoding-inegi/inegi03.png" width="600" height="471" /></a>
 
 En fin, sigo indagando... Así como archivos físicos, veo que también hay algunas opciones para exportar a `xlsx`. Entonces, descargo un par de ellos, para ver su tamaño, comparar la información con la de la página y quizá podría inyectar algunos *bot-clicks* con javascript; quizá sea útil descargar automáticamente estos archivos. O incluso, un [mágico](https://www.gnu.org/software/wget/) `wget` podría funcionar, pero... *nah que flojera*.
 
-Entonces... quizá haya algo interesante en el HTML que <del>escupe</del> arroja alguno de los enlaces que están ligados al `post` de los botones de exportar, para ir directo a los archivos. Incluso, estos archivos muy probablemente sean generados dinámicamente -*al vuelo*-.
+Entonces... puede que haya algo interesante en el HTML que <del>escupe</del> arroja alguno de los enlaces que están ligados al `post` de los botones de exportar, para ir directo a los archivos. Incluso, estos archivos muy probablemente sean generados dinámicamente -*al vuelo*-.
 
 ( **Update 21/05/2016**: El enlace del párrago siguiente, lo han deshabilitado. Pero alcancé a tomar un screenshot...*)
 
@@ -47,7 +47,7 @@ Y es entonces que me encuentro [esta url](http://www.inegi.org.mx/est/contenidos
 
 Nótese lo señalado con la flecha y las líneas previas... No solo hay consultas SQL en hiddens, también una [cadena de conexión](https://www.connectionstrings.com/)!.
 
-**HTML**, definitivamente, **no es para almacenar ese tipo de información**, esto debería estar escrito en otro lugar. No sé cual haya sido la razón de hacerlo de esa manera; quiero suponer que está ligado con el modo en que se generan los documentos en excel, que a juzgar por el resto del html, es lógico que se construyen dinámicamente y no son archivos físicos en disco. Pero de cualquier forma, esto último no lo justifica...
+**HTML**, definitivamente, **no es para almacenar ese tipo de información**, esto debería estar escrito en otro lugar. No sé cual haya sido la razón de hacerlo de esa manera; quiero suponer que está ligado con el modo en que se generan los documentos en excel, que a juzgar por el resto del html, es lógico que se construyen dinámicamente, los envía el servidor y no son archivos físicos en disco. Pero de cualquier forma, esto no lo justifica...
 
 En definitiva, esto se trata de crítica constructiva. Mi intención y mensaje es que **se debe prestar atención y, aunque para algunos puede no importar, habrá quienes sacarán el mayor provecho de estas malas prácticas y mal uso de los lenguajes y/o herramientas**. Es por esto que en ocasiones es importante conocer un mínimo suficiente de teoría.
 
