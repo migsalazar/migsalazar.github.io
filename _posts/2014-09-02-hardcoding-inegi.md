@@ -37,7 +37,7 @@ Dentro de estos *embebidos*, aparecen rutas que apuntan a archivos de excel, qui
 
 En fin, sigo indagando... así como archivos físicos, también hay algunas opciones para exportar la información de la página a un formato en `xlsx`. Descargo un par de ellos para ver su tamaño, comparar la información con la de la página y quizá podría inyectar algunos *bot-clicks* con javascript; podría ser útil descargar automáticamente estos archivos. O incluso, un [mágico](https://www.gnu.org/software/wget/) `wget`, pero... *nah que flojera*.
 
-Por alguna razn, creí que podría tener algo interesante el HTML que arroja alguno de los enlaces que están ligados al `post` de los botones de exportar. Incluso, pienso que estos archivos muy probablemente sean generados dinámicamente -*al vuelo*-.
+Por alguna razón, creí que podría tener algo interesante el HTML que arroja alguno de los enlaces que están ligados al `post` de los botones de exportar. Incluso, pienso que estos archivos muy probablemente sean generados dinámicamente -*al vuelo*-.
 
 ( **Update 21/05/2016**: El enlace del párrafo siguiente lo han deshabilitado. Pero alcancé a tomar un screenshot...*)
 
