@@ -33,7 +33,7 @@ Con nuestro elemento `canvas` en el HTML, podemos acceder al contexto:
 Un punto importante a mencionar es el trabajo con las coordenadas del canvas; desde el punto de vista del elemento canvas, visto como un rectángulo, el sistema de coordenadas tiene el punto *orgien* en el vértice superior izquierdo. Sin embargo, para el plano cartesiano requerimos que se encuentre en el centro. Asi que necesitamos trasladar este punto al centro.
 
 <div class="img">
-<img src="{{ site.baseUrl }}/assets/img/posts/2016-06-02-plotting-math-function-with-canvas-html5/02.jpg" class="fix" />
+<img src="{{ site.baseUrl }}/assets/img/posts/2016-06-02-plotting-math/02.jpg" class="fix" />
 </div>
 
 En adelante, todos los puntos evaluados en la función deben ser calculados a partir del origen.
@@ -95,5 +95,5 @@ A este ejemplo le he hecho un ligero ajuste para animar la gráfica utilizando e
 Definitivamente con javascript son muchísimas líneas de código menos que en JAVA y es un primer buen acercamiento con el trazado de formas en la web utilizando canvas. Aún así, me parece que da mejores resultados implementar este tipo de situaciones con [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG){:target="_blank"}, quizá para un futuro post =)
 
 <script type="text/javascript" src="/assets/third/jQuery.appear/jquery.appear.js"></script>
-<script type="text/javascript" src="/assets/js/post/2016-06-02-plotting-math-function-with-canvas-html5/canvas.js"></script>
-<script type="text/javascript" src="/assets/js/post/2016-06-02-plotting-math-function-with-canvas-html5/index.js"></script>
+<script type="text/javascript" src="/assets/js/posts/2016-06-02-plotting-math/canvas.js"></script>
+<script type="text/javascript" src="/assets/js/posts/2016-06-02-plotting-math/index.js"></script>

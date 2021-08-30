@@ -1,17 +1,27 @@
 ---
 layout: default
 ---
+<section id="intro" class="intro">
+  <div class="flex-row-between">
+    <h1>Mig Salazar</h1>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
+  </div>
+  <div class="bio">
+    {{ site.description }}
+    <a href="{{ site.baseurl }}/about"> About me</a>
+  </div>
+</section>
 
-{% include header.html %}
-
-
-<div class="blog">
-    <h1>Blog Posts:</h1>
+<section class="posts" id="Blog">
+    <h2>NOTES</h2>
     <ul>
         {% for post in site.posts %}
         <li>
-            <span class="date">{{ post.date | date: '%Y %b %d' }}  » </span><a href="{{ post.url }}">{{ post.title }}</a>
+		<a href="{{ post.url }}">{{ post.title }}</a>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
         </li>
         {% endfor %}
     </ul>
-</div>
+</section>

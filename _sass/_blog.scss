@@ -1,0 +1,194 @@
+*,
+:after,
+:before {
+	box-sizing: border-box;
+	background-color: inherit;
+	color: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 15px;
+}
+
+body {
+	font-family: "Fira Code", monospace;
+	text-rendering: optimizeLegibility;
+	line-height: 1.75;
+	color: var(--main-text-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  &:hover {
+    color: var(--link-color);
+    border-bottom: 1px dotted;
+  }
+}
+
+code,
+pre {
+	background: var(--code-bg-color);
+	margin: 0 -27px;
+	border-width: 1px;
+}
+
+code {
+	margin: unset;
+	padding: 0.1rem;
+	color: var(--light-text-color);
+}
+
+pre code {
+	background-color: unset;
+	color: unset;
+}
+
+pre {
+	border-width: 3px;
+	padding: 0.8rem;
+	white-space: pre-wrap;
+	border-style: none none none solid;
+	border-color: var(--light-text-color);
+}
+
+img {
+	max-width: 100%;
+}
+
+hr {
+	background: var(--light-text-color);
+	height: 1px;
+	border: 0;
+}
+
+header {
+	flex-basis: 10rem;
+	flex-grow: 1;
+	position: relative;
+}
+
+header a {
+	text-decoration: none;
+}
+
+header li {
+	margin-bottom: 0.2rem;
+	text-align: right;
+	margin-right: 2rem;
+}
+
+header a.active {
+	font-weight: bold;
+}
+
+header,
+section {
+	padding: 1rem 0;
+}
+
+section {
+	margin-top: 5.5rem;
+}
+
+blockquote {
+	font-style: italic;
+	border-left: 5px solid var(--dark-text-color);
+	padding-left: 1rem;
+}
+
+section h1:first-child {
+	margin-top: 0;
+}
+
+strong,
+b {
+	font-weight: bold;
+}
+
+time {
+	color: var(--main-text-color);
+}
+
+main {
+	display: flex;
+	max-width: 47rem;
+	margin: -5rem auto 0;
+	padding: 2.4rem 2rem;
+	flex-direction: column;
+}
+
+.nounderline
+{
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.meta {
+	margin: 1.4rem 0;
+}
+
+.flex-row-between {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 45rem) {
+	header li {
+		display: inline;
+		margin-right: 1rem;
+	}
+	.logo {
+		padding-bottom: 1rem;
+	}
+	header ul {
+		border-bottom: 1px solid #edf2f7;
+		padding-bottom: 2rem;
+	}
+	nav ul {
+		border-right: 0px;
+	}
+
+	.photos ul {
+		margin-top: 0.5rem;
+	}
+
+	main {
+		padding: 0 2rem;
+	}
+
+}
+
+section {
+	flex-grow: 999;
+	display: flex;
+	flex-direction: column;
+}
+
+figcaption {
+	font-size: smaller;
+}
+
+::selection {
+background-color: #fffba0;
+color: #333;
+}
+
+.tags ul {
+	list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+	grid-template-rows:auto auto auto auto;
+}
+
+.tags li {
+	white-space: normal;
+	text-overflow: ellipsis;
+}

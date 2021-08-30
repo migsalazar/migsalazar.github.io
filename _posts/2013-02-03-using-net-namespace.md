@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ¿Dentro o fuera del namespace? Using .NET
-category: .NET
-tags: [using, .net, namespace]
+category: dotnet
+tags: [dotnet, csharp]
 ---
 
 Trabajando con MVC de .NET y la estructura que maneja por defecto, recientemente tuve un problema al utilizar `ViewModels`, ya que el espacio de nombres donde los incluía era dentro del espacio de nombres del modelo. Independientemente de la implementación de los ViewModels que elegí, el problema consistía en como estaban organizados.

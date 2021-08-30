@@ -2,12 +2,17 @@
 layout: default
 ---
 
-<div class="about">
-    <a class="about__index" href="/">../home</a>
-    <h1 class="about__title">Mig Salazar</h1>
-    <p class="about__location">Monterrey, Mx.</p>
-    <div class="about__content">
-      <img src="http://www.doppelme.com/DM14075188HL/crop.gif" border=0 />
-        {{ content }}
-    </div>
-</div>
+<section class="post">
+  <div class="flex-row-between">
+    <a href="{{ site.baseurl }}/" class="nounderline">../home</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
+  </div>
+</section>
+
+{{ content }}
+
+<section>
+  <nav class="post-nav" /nav>
+</section>

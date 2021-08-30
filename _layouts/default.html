@@ -1,30 +1,35 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  {% include head.html %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78250642-1"></script>
+  <script src="/assets/js/ga.js"></script>
+  <script src="/assets/js/darklight.js"></script>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <body>
+    <main>
+      {% include anchor_headings.html html=content anchorBody="#" %}
+    </main>
+  </body>
 
-    <link rel="icon" href="/assets/img/fav.ico">
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/scrap.css">
-    <link rel="stylesheet" type="text/css" href="/assets/third/font-awesome/css/font-awesome.min.css">
-    {% seo %}
-    <script type="text/javascript" src="/assets/third/jquery/jquery-1.12.3.min.js"></script>
-    <script type="text/javascript" src="/assets/js/typian.js"></script>
-    <script type="text/javascript" src="/assets/js/main.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/assets/js/ga.js"></script>
-</head>
-
-<body>
-
-    <div class="wrapper">
-        {{ content }}
+  <footer class="social-footer">
+    <div class="social-footer-icons">
+      <a href="https://github.com/migsalazar" title="Github profile" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="https://twitter.com/migsalazar_" title="Twitter profile" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/migsalazar" title="Linkedin profile" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-linkedin-in" aria-hidden="true"></i>
+      </a>
+      <a href="{{site.url}}{{ site.baseurl }}/atom.xml" title="Feed RSS" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-rss" aria-hidden="true"></i>
+      </a>
     </div>
-
-</body>
-
+  </footer>
 </html>

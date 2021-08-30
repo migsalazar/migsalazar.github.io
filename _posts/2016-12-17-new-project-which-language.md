@@ -2,7 +2,7 @@
 layout: post
 title: ¿Qué lenguaje y herramientas debo elegir?
 category: software
-tags: [languages, software, software development]
+tags: [languages, software]
 ---
 
 Ya casi se acaba el año y no quiero dejar pasar la Navidad sin poder regalarles un comentario :B

@@ -1,40 +1,82 @@
-name: Mig Salazar
+site: Mig Salazar
+title: Mig Salazar
 author: Mig Salazar
-url: http://migsalazar.com
-description: Debugging stories, coding, hacking and nonsense content
-repository: migsalazar/migsalazar.github.io
+url: https://migsalazar.mx
+description: >-
+  Debugging stories, coding, hacking and nonsense content
+repo: migsalazar/migsalazar.github.io
+googlewebfonts: Fira+Code:wght@400;500;700
+lang: es-MX
+data-theme: dark # default theme "dark" | "light"
+# timezone: Rome
 
-permalink: /:year/:month/:day/:title/
+# baseurl: ""
+permalink: pretty
+# permalink: /:year/:month/:day/:title/
 
 twitter:
   username: migsalazar_
 
-# File management
-include: [".htaccess"]
-exclude: ["README.md", "LICENSE"]
-
-sass:
-  style: :compresseds
-  sass_dir: _sass
-
 markdown: kramdown
 kramdown:
   input: GFM
-  hard_wrap: false
-highlighter: rouge
+  syntax_highlighter: rouge
 
-pigments: true
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
 
-gems:
-  - github-pages
-  - jekyll-gist
-  - jekyll-seo-tag
+# pigments: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-feed
-
-whitelist:
-  - github-pages
-  - jekyll-gist
+  - jekyll-relative-links
   - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
+  - jekyll-gist
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+relative_links:
+  enabled:     true
+  collections: false
+
+

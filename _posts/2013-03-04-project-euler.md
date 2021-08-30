@@ -1,8 +1,11 @@
 ---
 layout: post
 title: Project Euler
+description: description
+summary: summary
 category: python
 tags: [python, project euler]
+minute: 1
 ---
 
 De esos días que decides tomarte un gran y amplio descanso de 15 minutos *-como ustedes sabrán soy un rockstar y estoy muy ocupado atendiendo a mis fans-*, me puse a vagar por la red, sin rumbo alguno y en modo `random`... y encontré por ahí tan bonito sitio: [Project Euler](https://projecteuler.net/){:target="_blank"}.
