@@ -3,17 +3,13 @@ title: Mig Salazar
 author: Mig Salazar
 url: https://migsalazar.mx
 description: >-
-  Debugging stories, coding, hacking and nonsense content
+  Debugging stories, coding, hacking and biased thoughts
 repo: migsalazar/migsalazar.github.io
-googlewebfonts: Fira+Code:wght@400;500;700
+googlewebfonts: IBM+Plex+Serif:wght@500;700
 lang: es-MX
-data-theme: dark # default theme "dark" | "light"
-# timezone: Rome
-
-# baseurl: ""
-permalink: pretty
-# permalink: /:year/:month/:day/:title/
-
+data-theme: light
+timezone: America/Monterrey
+permalink: /:year/:month/:day/:title/
 twitter:
   username: migsalazar_
 
@@ -34,8 +30,6 @@ exclude:
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
-
-# pigments: true
 
 sass:
   sass_dir: _sass
@@ -78,5 +72,3 @@ defaults:
 relative_links:
   enabled:     true
   collections: false
-
-

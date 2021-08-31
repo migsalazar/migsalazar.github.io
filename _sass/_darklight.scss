@@ -18,6 +18,12 @@
     transform: scale(0.8);
 }
 
+// $color-grey: #eeeeee;
+// $color-grey-strong: #a0a0a0;
+// $color-grey-blockquote: #767676;
+// $color-link: #c63417;
+// $color-code: #00ff00;
+
 html,
 html[data-theme="light"] {
     --very-light-text-color: rgb(222, 222, 222);
@@ -25,7 +31,7 @@ html[data-theme="light"] {
     --medium-text-color: #555;
     --main-text-color: #333;
     --dark-text-color: #393e46;
-    --link-color: rgb(50, 87, 209);
+    --link-color: #FE0037;
     --code-bg-color: rgb(245, 245, 245);
 
     background-color: rgb(255, 255, 255);

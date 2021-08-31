@@ -3,6 +3,11 @@
   display: flex;
   justify-content: center;
   position: initial;
+  text-align: center;
+  a {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
   .social-footer-icons {
     .fa {
       font-size: 1.3rem;

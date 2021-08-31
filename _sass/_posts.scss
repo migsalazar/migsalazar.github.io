@@ -3,10 +3,6 @@
   margin-top: 1rem;
 }
 
-.post p {
-    margin: 1rem 0;
-}
-
 .posts > h3 {
     font-weight: 500;
 }
@@ -40,16 +36,19 @@ header ul {
     font-variant-numeric: tabular-nums;
 }
 
-.post > h1.title {
-    font-size: x-large;
-    // margin-bottom: 0;
+.post p {
+  margin: 1rem 0;
 }
 
-.post > time {
-    // margin-bottom: 0;
-    // margin-top: 3rem;
+.post__title {
+  margin-bottom: 3rem;
 }
 
+.post__title > h1 {
+  font-size: x-large;
+}
+
+.post > time { }
 
 .post-nav {
     display: flex;

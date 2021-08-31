@@ -3,37 +3,16 @@ layout: default
 ---
 <script type="text/javascript" src="/assets/js/disqus.js"></script>
 <section class="post">
-  <div class="flex-row-between">
-    <a href="{{ site.baseurl }}/" class="nounderline">../home</a>
-    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
-      <div></div>
-    </button>
+  <div class="post__title">
+    <h1>{{ page.title }}</h1>
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }} - {% include read_time.html %} read </time>
   </div>
-  <h1 class="title">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }} - {% include read_time.html %} read </time>
+  {{ content }}
   <span class="meta">
     {% for tag in page.tags %}
-    <a href="{{ site.baseurl }}/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
-  {{ content }}
-</section>
-
-<section>
-
-  <nav class="post-nav">
-    {% if page.previous %}
-    <a class="post-nav-item post-nav-prev" href="{{ page.previous | relative_url }}">
-      <div class="nav-arrow">Previous</div>
-      <span class="post-title">{{ page.previous.title }}</span>
-    </a>
-    {% endif %} {% if page.next %}
-    <a class="post-nav-item post-nav-next" href="{{ page.next | relative_url }}">
-      <div class="nav-arrow">Next</div>
-      <span class="post-title">{{ page.next.title }}</span>
-    </a>
-    {% endif %}
-
-  </nav>
-
+      <a href="{{ site.baseurl }}/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </span>
 </section>
 
 {% include disqus_comments.html %}

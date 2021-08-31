@@ -5,31 +5,12 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78250642-1"></script>
-  <script src="/assets/js/ga.js"></script>
-  <script src="/assets/js/darklight.js"></script>
-
   <body>
     <main>
-      {% include anchor_headings.html html=content anchorBody="#" %}
+      <!-- {% include anchor_headings.html html=content anchorBody="#" %} -->
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
     </main>
   </body>
-
-  <footer class="social-footer">
-    <div class="social-footer-icons">
-      <a href="https://github.com/migsalazar" title="Github profile" target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="https://twitter.com/migsalazar_" title="Twitter profile" target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/migsalazar" title="Linkedin profile" target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-linkedin-in" aria-hidden="true"></i>
-      </a>
-      <a href="{{site.url}}{{ site.baseurl }}/atom.xml" title="Feed RSS" target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-rss" aria-hidden="true"></i>
-      </a>
-    </div>
-  </footer>
 </html>
